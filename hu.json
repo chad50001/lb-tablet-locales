@@ -592,7 +592,7 @@
                         "REVOKE": "Visszavonás"
                     }
                 },
-"ADD_AVATAR": {
+                "ADD_AVATAR": {
                     "TITLE": "Profilkép hozzáadása",
                     "SET_PHOTO": "Fotó beállítása",
                     "PASTE_URL": "URL beillesztése",
@@ -615,6 +615,9 @@
                     "DESCRIPTION_DETAILS": "Kérjük add meg az összeget és a leírást",
                     "FINE_WITH_OFFENCE": "Bírság jogsértéssel",
                     "FINE_WITHOUT_OFFENCE": "Bírság jogsértés nélkül",
+                    "X_ADDED": "{catalogLabel} hozzáadva",
+                    "ADD_MORE_X": "Hozzáadva: {catalogLabel}. Hozzáadsz mégegyet {catalogLabel}?",
+                    "ADD_ANOTHER": "Hozzáadás",
                     "CANCEL": "Mégse",
                     "PROCEED": "Folytatás",
                     "FINE": "Bírság",
@@ -762,8 +765,14 @@
                 "INACTIVE": "Inaktív",
                 "CLOSED": "Lezárt",
                 "SET_LOCATION": "Helyszín beállítása",
+                "ADD_LOCATION": "Helyszín hozzáadása",
                 "USE_CURRENT_LOCATION": "Jelenlegi helyszín használata",
+                "ADD_CURRENT_LOCATION": "Jelenlegi helyszín hozzáadása",
                 "NO_LOCATION_SET": "Nincs helyszín beállítva",
+                "REMOVE_LOCATION": {
+                    "TITLE": "Helyszín eltávolítása",
+                    "DESCRIPTION": "Biztosan eltávolítod ezt a helyszínt?"
+                },
                 "REMOVE_TARGET": {
                     "TITLE": "Célpont eltávolítása",
                     "DESCRIPTION": "Biztosan eltávolítod a célpontot?"
@@ -794,6 +803,10 @@
                 "NO_CIVILLIANS_INVOLVED": "Nincsenek érintett civilek",
                 "REMOVE_CIVILIAN": {
                     "TITLE": "Civil eltávolítása",
+                    "DESCRIPTION": "Biztosan eltávolítod {name} személyt?"
+                },
+                "REMOVE_CRIMINAL": {
+                    "TITLE": "Bűnöző eltávolítása",
                     "DESCRIPTION": "Biztosan eltávolítod {name} személyt?"
                 },
                 "CRIMINALS_INVOLVED": "Érintett bűnözők",
@@ -901,6 +914,9 @@
                 "SET_AVATAR": "Profilkép beállítása",
                 "REMOVE_AVATAR": "Profilkép eltávolítása",
                 "MANAGE": "Kezelés",
+                "REPLY": "Válasz",
+                "REPLYING_TO": "Válasz neki",
+                "ATTACHMENT": "Csatolmány",
                 "LEAVE": {
                     "TITLE": "Kilépés",
                     "DESCRIPTION": "Biztosan ki szeretnél lépni a chatszobából?"
@@ -1069,7 +1085,7 @@
                     "MISSING_DETAILS": "Kötelező megadni az ítéletet és az indokot"
                 }
             },
-"LOGS": {
+            "LOGS": {
                 "TITLE": "Naplók",
                 "SEARCH": "Naplók keresése",
                 "FILTER": "Szűrő",
@@ -1492,6 +1508,8 @@
         "FONT_AND_COLOR": "Betűtípus és szín"
     },
     "MISC": {
+        "COPY": "Másolás",
+        "OPEN_IN_BROWSER": "Megnyitás böngészőben",
         "GENDERS": {
             "MALE": "Férfi",
             "FEMALE": "Nő"
@@ -1598,7 +1616,7 @@
                 "21": "vonat",
                 "22": "nyílt kerekű autó"
             },
-"VEHICLE_DATA": {
+            "VEHICLE_DATA": {
                 "BODY_TYPE": "Karosszéria típusa",
                 "MANUFACTURER": "Gyártó",
                 "MODEL": "Modell",
@@ -1653,152 +1671,8 @@
                 "CODE": "10-31"
             }
         },
-        "POLICE": {
-            "EVIDENCE_LABEL": "Bizonyíték: {id}. ügyirat",
-            "NEW_BULLETIN_NOTIFICATION": {
-                "TITLE": "Új hirdetőtáblai bejegyzés",
-                "CONTENT": "{title}"
-            },
-            "NEW_CASE_NOTIFICATION": {
-                "TITLE": "Új ügyirat",
-                "CONTENT": "{title}"
-            },
-            "NEW_REPORT_NOTIFICATION": {
-                "TITLE": "Új jelentés",
-                "CONTENT": "{title}"
-            },
-            "NEW_WARRANT_NOTIFICATION": {
-                "TITLE": "Új parancs",
-                "CONTENT": "{title}"
-            },
-            "NEW_CHAT_CHANNEL_NOTIFICATION": {
-                "TITLE": "Új beszélgetés",
-                "CONTENT": "{channel}"
-            },
-            "CHAT_MESSAGE_NOTIFICATION": {
-                "TITLE": "Új üzenet itt: {channel}",
-                "CONTENT": "{message}"
-            },
-            "LOGS": {
-                "CREATE_OFFENCE_CATEGORY": {
-                    "TITLE": "Jogsértési kategória létrehozva",
-                    "DESCRIPTION": "Létrehozta a(z) '{name}' kategóriát"
-                },
-                "DELETE_OFFENCE_CATEGORY": {
-                    "TITLE": "Jogsértési kategória törölve",
-                    "DESCRIPTION": "Törölte a(z) '{name}' kategóriát"
-                },
-                "UPDATE_OFFENCE_CATEGORY": {
-                    "TITLE": "Jogsértési kategória frissítve",
-                    "DESCRIPTION": "Átnevezte a(z) '{oldName}' jogsértési kategóriát erre: {newName}"
-                },
-                "CREATE_OFFENCE": {
-                    "TITLE": "Jogsértés létrehozva",
-                    "DESCRIPTION": "Létrehozott egy {class} típusú '{name}' jogsértést a(z) '{category}' kategóriában"
-                },
-                "DELETE_OFFENCE": {
-                    "TITLE": "Jogsértés törölve",
-                    "DESCRIPTION": "Törölte a(z) '{name}' jogsértést a(z) '{category}' kategóriából"
-                },
-                "UPDATE_OFFENCE": {
-                    "TITLE": "Jogsértés frissítve",
-                    "DESCRIPTION": "Frissítette a(z) '{name}' jogsértést a(z) '{category}' kategóriában"
-                }
-            },
-            "WIRETAP_NOTIFICATION": {
-                "TITLE": "Lehallgatott hívás",
-                "CONTENT": "A lehallgatott {number} telefonszám éppen hívásban van."
-            }
-        },
-        "AMBULANCE": {
-            "NOTIFICATIONS": {
-                "CHAT": {
-                    "NEW_CHANNEL": {
-                        "TITLE": "Új beszélgetés",
-                        "CONTENT": "{channel}"
-                    },
-                    "NEW_MESSAGE": {
-                        "TITLE": "Új üzenet itt: {channel}",
-                        "CONTENT": "{message}"
-                    }
-                },
-                "NEW_BULLETIN": {
-                    "TITLE": "Új hirdetőtáblai bejegyzés",
-                    "CONTENT": "{title}"
-                },
-                "NEW_REPORT": {
-                    "TITLE": "Új jelentés",
-                    "CONTENT": "{title}"
-                }
-            },
-            "TAG_TYPES": {
-                "PROFILE": "profil",
-                "REPORT": "jelentés",
-                "PROPERTY": "ingatlan",
-                "WEAPON": "fegyver"
-            },
-            "LOGS": {
-                "CREATE_CONDITION_CATEGORY": {
-                    "TITLE": "Állapot kategória létrehozva",
-                    "DESCRIPTION": "Létrehozta a(z) '{name}' kategóriát"
-                },
-                "DELETE_CONDITION_CATEGORY": {
-                    "TITLE": "Állapot kategória törölve",
-                    "DESCRIPTION": "Törölte a(z) '{name}' kategóriát"
-                },
-                "UPDATE_CONDITION_CATEGORY": {
-                    "TITLE": "Állapot kategória frissítve",
-                    "DESCRIPTION": "Átnevezte a(z) '{oldName}' állapot kategóriát erre: {newName}"
-                },
-                "CREATE_CONDITION": {
-                    "TITLE": "Állapot létrehozva",
-                    "DESCRIPTION": "Létrehozott egy {severity} súlyosságú '{name}' állapotot a(z) '{category}' kategóriában"
-                },
-                "DELETE_CONDITION": {
-                    "TITLE": "Állapot törölve",
-                    "DESCRIPTION": "Törölte a(z) '{name}' állapotot a(z) '{category}' kategóriából"
-                },
-                "UPDATE_CONDITION": {
-                    "TITLE": "Állapot frissítve",
-                    "DESCRIPTION": "Frissítette a(z) '{name}' állapotot a(z) '{category}' kategóriában"
-                },
-                "CREATE_BULLETIN": {
-                    "TITLE": "Hirdetőtáblai bejegyzés létrehozva",
-                    "DESCRIPTION": "Létrehozta a(z) '{title}' bejegyzést"
-                },
-                "UPDATE_BULLETIN": {
-                    "TITLE": "Hirdetőtáblai bejegyzés frissítve",
-                    "DESCRIPTION": "Frissítette a(z) '{title}' bejegyzést"
-                },
-                "DELETE_BULLETIN": {
-                    "TITLE": "Hirdetőtáblai bejegyzés törölve",
-                    "DESCRIPTION": "Törölte a(z) {id} azonosítójú bejegyzést"
-                },
-                "PIN_BULLETIN": {
-                    "TITLE": "Hirdetőtáblai bejegyzés rögzítve",
-                    "DESCRIPTION": "Rögzítette a(z) {id} azonosítójú bejegyzést"
-                },
-                "UNPIN_BULLETIN": {
-                    "TITLE": "Hirdetőtáblai bejegyzés rögzítése megszüntetve",
-                    "DESCRIPTION": "Megszüntette a(z) {id} azonosítójú bejegyzés rögzítését"
-                },
-                "DELETE_TAG": {
-                    "TITLE": "Címke törölve",
-                    "DESCRIPTION": "Törölte a(z) '{name}' címkét"
-                },
-                "UPDATE_PROFILE": {
-                    "TITLE": "Profil frissítve",
-                    "DESCRIPTION": "Frissítette {name} profilját"
-                },
-                "CREATE_REPORT": {
-                    "TITLE": "Jelentés létrehozva",
-                    "DESCRIPTION": "Létrehozott egy {type} típusú '{title}' jelentést {patient} beteg részére, azonosító: {id}"
-                },
-                "UPDATE_REPORT": {
-                    "TITLE": "Jelentés frissítve",
-                    "DESCRIPTION": "Frissítette a(z) {type} típusú '{title}' jelentést, azonosító: {id}"
-                }
-            }
+        "MDT": {
+            "EVIDENCE_LABEL": "Bizonyíték: {id}. ügyirat"
         },
         "MDT_NOTIFICATIONS": {
             "NEW_CHAT_CHANNEL": {
@@ -1813,6 +1687,10 @@
             "CHAT_INVITE": {
                 "TITLE": "Chat meghívó",
                 "CONTENT": "Meghívtak a(z) '{channel}' csatornához"
+            },
+            "CHAT_REACTION": {
+                "TITLE": "{name} reagált üzenetedre",
+                "CONTENT": "{name} reagált a {reaction} reakcióval a {channel} csatornában"
             },
             "NEW_BULLETIN": {
                 "TITLE": "Új hirdetőtáblai bejegyzés",
@@ -1833,6 +1711,18 @@
             "NEW_REPORT": {
                 "TITLE": "Új {report_name}",
                 "CONTENT": "{title}"
+            },
+            "CANT_FINE_YOURSELF": {
+                "TITLE": "Sikertelen bírságolás",
+                "CONTENT": "Nem adhatsz bírságot magadnak."
+            },
+            "CANT_JAIL_YOURSELF": {
+                "TITLE": "Sikertelen börtönzés",
+                "CONTENT": "Nem küldheted börtönbe magad."
+            },
+            "WIRETAP": {
+                "TITLE": "Hívás lehallgatva",
+                "CONTENT": "A lehallgatott szám {number} hívásban van."
             }
         }
     },
