@@ -613,8 +613,11 @@
                     "TITLE": "Fine Player",
                     "DESCRIPTION": "Would you like to fine {name}?",
                     "DESCRIPTION_DETAILS": "Please fill in the amount and description",
-                    "FINE_WITH_OFFENCE": "Fine with offence",
-                    "FINE_WITHOUT_OFFENCE": "Fine without offence",
+                    "FINE_WITH_X": "Fine with {catalogLabel}",
+                    "FINE_WITHOUT_X": "Fine without {catalogLabel}",
+                    "X_ADDED": "{catalogLabel} added",
+                    "ADD_MORE_X": "Added: {catalogLabel}. Add another {catalogLabel}?",
+                    "ADD_ANOTHER": "Add another",
                     "CANCEL": "Cancel",
                     "PROCEED": "Proceed",
                     "FINE": "Fine",
@@ -762,8 +765,14 @@
                 "INACTIVE": "Inactive",
                 "CLOSED": "Closed",
                 "SET_LOCATION": "Set Location",
+                "ADD_LOCATION": "Add Location",
                 "USE_CURRENT_LOCATION": "Use Current Location",
+                "ADD_CURRENT_LOCATION": "Add Current Location",
                 "NO_LOCATION_SET": "No location set",
+                "REMOVE_LOCATION": {
+                    "TITLE": "Remove Location",
+                    "DESCRIPTION": "Are you sure you want to remove this location?"
+                },
                 "REMOVE_TARGET": {
                     "TITLE": "Remove Target",
                     "DESCRIPTION": "Are you sure you want to remove the target?"
@@ -794,6 +803,10 @@
                 "NO_CIVILLIANS_INVOLVED": "No Civillians Involved",
                 "REMOVE_CIVILIAN": {
                     "TITLE": "Remove Civilian",
+                    "DESCRIPTION": "Are you sure you want to remove {name}?"
+                },
+                "REMOVE_CRIMINAL": {
+                    "TITLE": "Remove Criminal",
                     "DESCRIPTION": "Are you sure you want to remove {name}?"
                 },
                 "CRIMINALS_INVOLVED": "Criminals Involved",
@@ -901,6 +914,9 @@
                 "SET_AVATAR": "Set Avatar",
                 "REMOVE_AVATAR": "Remove Avatar",
                 "MANAGE": "Manage",
+                "REPLY": "Reply",
+                "REPLYING_TO": "Replying to",
+                "ATTACHMENT": "Attachment",
                 "LEAVE": {
                     "TITLE": "Leave",
                     "DESCRIPTION": "Are you sure you want to leave the chatroom?"
@@ -1492,6 +1508,8 @@
         "FONT_AND_COLOR": "Font & Color"
     },
     "MISC": {
+        "COPY": "Copy",
+        "OPEN_IN_BROWSER": "Open in browser",
         "GENDERS": {
             "MALE": "Male",
             "FEMALE": "Female"
@@ -1653,152 +1671,8 @@
                 "CODE": "10-31"
             }
         },
-        "POLICE": {
-            "EVIDENCE_LABEL": "Evidence: Case {id}",
-            "NEW_BULLETIN_NOTIFICATION": {
-                "TITLE": "New Bulletin",
-                "CONTENT": "{title}"
-            },
-            "NEW_CASE_NOTIFICATION": {
-                "TITLE": "New Case",
-                "CONTENT": "{title}"
-            },
-            "NEW_REPORT_NOTIFICATION": {
-                "TITLE": "New Report",
-                "CONTENT": "{title}"
-            },
-            "NEW_WARRANT_NOTIFICATION": {
-                "TITLE": "New Warrant",
-                "CONTENT": "{title}"
-            },
-            "NEW_CHAT_CHANNEL_NOTIFICATION": {
-                "TITLE": "New Conversation",
-                "CONTENT": "{channel}"
-            },
-            "CHAT_MESSAGE_NOTIFICATION": {
-                "TITLE": "New Message in {channel}",
-                "CONTENT": "{message}"
-            },
-            "LOGS": {
-                "CREATE_OFFENCE_CATEGORY": {
-                    "TITLE": "Created an offence category",
-                    "DESCRIPTION": "Created the category '{name}'"
-                },
-                "DELETE_OFFENCE_CATEGORY": {
-                    "TITLE": "Deleted an offence category",
-                    "DESCRIPTION": "Deleted the category '{name}'"
-                },
-                "UPDATE_OFFENCE_CATEGORY": {
-                    "TITLE": "Updated an offence category",
-                    "DESCRIPTION": "Renamed the offence category '{oldName}' to {newName}"
-                },
-                "CREATE_OFFENCE": {
-                    "TITLE": "Created an offence",
-                    "DESCRIPTION": "Created a {class} offence '{name}' in '{category}'"
-                },
-                "DELETE_OFFENCE": {
-                    "TITLE": "Deleted an offence",
-                    "DESCRIPTION": "Deleted the offence '{name}' in '{category}'"
-                },
-                "UPDATE_OFFENCE": {
-                    "TITLE": "Updated an offence",
-                    "DESCRIPTION": "Updated the offence '{name}' in '{category}'"
-                }
-            },
-            "WIRETAP_NOTIFICATION": {
-                "TITLE": "Wiretapped Call",
-                "CONTENT": "The wiretapped phone number {number} is in a call."
-            }
-        },
-        "AMBULANCE": {
-            "NOTIFICATIONS": {
-                "CHAT": {
-                    "NEW_CHANNEL": {
-                        "TITLE": "New Conversation",
-                        "CONTENT": "{channel}"
-                    },
-                    "NEW_MESSAGE": {
-                        "TITLE": "New Message in {channel}",
-                        "CONTENT": "{message}"
-                    }
-                },
-                "NEW_BULLETIN": {
-                    "TITLE": "New Bulletin",
-                    "CONTENT": "{title}"
-                },
-                "NEW_REPORT": {
-                    "TITLE": "New Report",
-                    "CONTENT": "{title}"
-                }
-            },
-            "TAG_TYPES": {
-                "PROFILE": "profile",
-                "REPORT": "report",
-                "PROPERTY": "property",
-                "WEAPON": "weapon"
-            },
-            "LOGS": {
-                "CREATE_CONDITION_CATEGORY": {
-                    "TITLE": "Created a condition category",
-                    "DESCRIPTION": "Created the category '{name}'"
-                },
-                "DELETE_CONDITION_CATEGORY": {
-                    "TITLE": "Deleted a condition category",
-                    "DESCRIPTION": "Deleted the category '{name}'"
-                },
-                "UPDATE_CONDITION_CATEGORY": {
-                    "TITLE": "Updated a condition category",
-                    "DESCRIPTION": "Renamed the condition category '{oldName}' to {newName}"
-                },
-                "CREATE_CONDITION": {
-                    "TITLE": "Created a condition",
-                    "DESCRIPTION": "Created a {severity} condition '{name}' in '{category}'"
-                },
-                "DELETE_CONDITION": {
-                    "TITLE": "Deleted a condition",
-                    "DESCRIPTION": "Deleted the condition '{name}' in '{category}'"
-                },
-                "UPDATE_CONDITION": {
-                    "TITLE": "Updated a condition",
-                    "DESCRIPTION": "Updated the condition '{name}' in '{category}'"
-                },
-                "CREATE_BULLETIN": {
-                    "TITLE": "Created a bulletin post",
-                    "DESCRIPTION": "Created a bulletin post '{title}'"
-                },
-                "UPDATE_BULLETIN": {
-                    "TITLE": "Updated a bulletin post",
-                    "DESCRIPTION": "Updated the bulletin post '{title}'"
-                },
-                "DELETE_BULLETIN": {
-                    "TITLE": "Deleted a bulletin post",
-                    "DESCRIPTION": "Deleted the bulletin post with the id {id}"
-                },
-                "PIN_BULLETIN": {
-                    "TITLE": "Pinned a bulletin post",
-                    "DESCRIPTION": "Pinned a bulletin post with the id {id}"
-                },
-                "UNPIN_BULLETIN": {
-                    "TITLE": "Unpinned a bulletin post",
-                    "DESCRIPTION": "Unpinned the bulletin post with the id {id}"
-                },
-                "DELETE_TAG": {
-                    "TITLE": "Deleted a tag",
-                    "DESCRIPTION": "Deleted the tag '{name}'"
-                },
-                "UPDATE_PROFILE": {
-                    "TITLE": "Updated a profile",
-                    "DESCRIPTION": "Updated {name}'s profile"
-                },
-                "CREATE_REPORT": {
-                    "TITLE": "Created a report",
-                    "DESCRIPTION": "Created a {type} report '{title}' for {patient} with id {id}"
-                },
-                "UPDATE_REPORT": {
-                    "TITLE": "Updated a report",
-                    "DESCRIPTION": "Updated the {type} report '{title}' with id {id}"
-                }
-            }
+        "MDT": {
+            "EVIDENCE_LABEL": "Evidence - {label} {id}"
         },
         "MDT_NOTIFICATIONS": {
             "NEW_CHAT_CHANNEL": {
@@ -1813,6 +1687,10 @@
             "CHAT_INVITE": {
                 "TITLE": "Chat Invite",
                 "CONTENT": "You've been invited to join '{channel}'"
+            },
+            "CHAT_REACTION": {
+                "TITLE": "{name} reacted to your message",
+                "CONTENT": "{name} reacted with {reaction} to your message in {channel}"
             },
             "NEW_BULLETIN": {
                 "TITLE": "New Bulletin",
@@ -1833,6 +1711,18 @@
             "NEW_REPORT": {
                 "TITLE": "New {report_name}",
                 "CONTENT": "{title}"
+            },
+            "CANT_FINE_YOURSELF": {
+                "TITLE": "Failed to fine",
+                "CONTENT": "You cannot fine yourself."
+            },
+            "CANT_JAIL_YOURSELF": {
+                "TITLE": "Failed to jail",
+                "CONTENT": "You cannot jail yourself."
+            },
+            "WIRETAP": {
+                "TITLE": "Wiretapped Call",
+                "CONTENT": "The wiretapped phone number {number} is in a call."
             }
         }
     },
