@@ -117,9 +117,7 @@
             "DELETE_TITLE": "Delete {title}",
             "DELETE_TEXT": "Are you sure you want to delete '{title}'?",
             "BUTTON_CANCEL": "Cancel",
-            "BUTTON_DELETE": "Delete",
-            "PHONE": "Phone",
-            "TABLET": "Tablet"
+            "BUTTON_DELETE": "Delete"
         },
         "CLOCK": {
             "WORLDCLOCK": {
@@ -181,7 +179,7 @@
         },
         "APPSTORE": {
             "TITLE": "Apps",
-            "SEARCH": "Search",
+            "SEARCH": "Search Apps",
             "GET": "Get",
             "OPEN": "Open",
             "TODAY": "Today",
@@ -585,6 +583,13 @@
                     "ADD_LICENSE": "Add License",
                     "ADD": "Add",
                     "NO_LICENSES": "No Licenses",
+                    "POINTS": "pts",
+                    "POINTS_LABEL": "{current}/{limit} pts",
+                    "CHANGE_POINTS": "Change points",
+                    "CHANGE_POINTS_TITLE": "Set points",
+                    "CHANGE_POINTS_DESCRIPTION": "Points for {license} (0–{limit})",
+                    "CHANGE_POINTS_PLACEHOLDER": "Points",
+                    "DELETE_LICENSE": "Delete license",
                     "REVOKE_LICENSE": {
                         "TITLE": "Revoke License",
                         "DESCRIPTION": "Are you sure you want to revoke the license {license}?",
@@ -1274,6 +1279,8 @@
                 }
             },
             "MISC": {
+                "TABLET": "Tablet",
+                "PHONE": "Phone",
                 "SOON": "Soon",
                 "UNKNOWN": "Unknown",
                 "MINUTES": "{minutes}m",
