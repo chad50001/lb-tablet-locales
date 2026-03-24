@@ -585,6 +585,13 @@
                     "ADD_LICENSE": "Ajouter un permis",
                     "ADD": "Ajouter",
                     "NO_LICENSES": "Aucun Permis",
+                    "POINTS": "pts",
+                    "POINTS_LABEL": "{current}/{limit} pts",
+                    "CHANGE_POINTS": "Changer les points",
+                    "CHANGE_POINTS_TITLE": "Définir les points",
+                    "CHANGE_POINTS_DESCRIPTION": "Points pour {license} (0–{limit})",
+                    "CHANGE_POINTS_PLACEHOLDER": "Points",
+                    "DELETE_LICENSE": "Supprimer le permis",
                     "REVOKE_LICENSE": {
                         "TITLE": "Retrait du permis",
                         "DESCRIPTION": "Êtes-vous sur de vouloir retirer le permis: {license}?",
@@ -1274,6 +1281,8 @@
                 }
             },
             "MISC": {
+                "TABLET": "Tablette",
+                "PHONE": "Téléphone",
                 "SOON": "Prochainement",
                 "UNKNOWN": "Inconnu",
                 "MINUTES": "{minutes}m",
