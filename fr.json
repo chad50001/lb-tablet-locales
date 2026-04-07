@@ -591,7 +591,6 @@
                     "CHANGE_POINTS_TITLE": "Définir les points",
                     "CHANGE_POINTS_DESCRIPTION": "Points pour {license} (0–{limit})",
                     "CHANGE_POINTS_PLACEHOLDER": "Points",
-                    "DELETE_LICENSE": "Supprimer le permis",
                     "REVOKE_LICENSE": {
                         "TITLE": "Retrait du permis",
                         "DESCRIPTION": "Êtes-vous sur de vouloir retirer le permis: {license}?",
@@ -1278,6 +1277,12 @@
                     "BROWN": "Brun",
                     "NAVY": "Bleu Marine",
                     "CYAN": "Cyan"
+                },
+                "ERROR": {
+                    "TITLE": "Erreure",
+                    "DESCRIPTION": "Une erreure est survenue lors de la création du Tag.",
+                    "TITLE_EXISTS": "Un Tag exist déjà avec ce nom",
+                    "OK": "OK"
                 }
             },
             "MISC": {
@@ -1293,6 +1298,7 @@
                 "REMOVE_AVATAR": "Supprimer l'Avatar",
                 "SET_CALLSIGN": "Définir l'identifiant radio",
                 "SET_WAYPOINT": "Définir le point du GPS",
+                "SET_WAYPOINT_DESCRIPTION": "Êtes-vous sur de vouloir placer de point de cheminement",
                 "WAYPOINT_SET": "Point GPS placé",
                 "WAYPOINT_SET_DESCRIPTION": "Le point de cheminement a été défini à l'emplacement",
                 "CALLSIGN": {
