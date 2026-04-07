@@ -117,9 +117,7 @@
             "DELETE_TITLE": "{title} törlése",
             "DELETE_TEXT": "Biztosan törlöd a(z) '{title}' nevű jegyzetet?",
             "BUTTON_CANCEL": "Mégse",
-            "BUTTON_DELETE": "Törlés",
-            "PHONE": "Telefon",
-            "TABLET": "Tablet"
+            "BUTTON_DELETE": "Törlés"
         },
         "CLOCK": {
             "WORLDCLOCK": {
@@ -585,6 +583,12 @@
                     "ADD_LICENSE": "Engedély hozzáadása",
                     "ADD": "Hozzáadás",
                     "NO_LICENSES": "Nincsenek engedélyek",
+                    "POINTS": "pont",
+                    "POINTS_LABEL": "{current}/{limit} pont",
+                    "CHANGE_POINTS": "Pontok módosítása",
+                    "CHANGE_POINTS_TITLE": "Pontok beállítása",
+                    "CHANGE_POINTS_DESCRIPTION": "Pontok a(z) {license} engedélyhez (0–{limit})",
+                    "CHANGE_POINTS_PLACEHOLDER": "Pontok",
                     "REVOKE_LICENSE": {
                         "TITLE": "Engedély visszavonása",
                         "DESCRIPTION": "Biztosan visszavonod a(z) {license} engedélyt?",
@@ -613,8 +617,8 @@
                     "TITLE": "Játékos megbírságolása",
                     "DESCRIPTION": "Meg szeretnéd bírságolni {name} személyt?",
                     "DESCRIPTION_DETAILS": "Kérjük add meg az összeget és a leírást",
-                    "FINE_WITH_X": "Bírság jogsértéssel",
-                    "FINE_WITHOUT_X": "Bírság jogsértés nélkül",
+                    "FINE_WITH_OFFENCE": "Bírság jogsértéssel",
+                    "FINE_WITHOUT_OFFENCE": "Bírság jogsértés nélkül",
                     "X_ADDED": "{catalogLabel} hozzáadva",
                     "ADD_MORE_X": "Hozzáadva: {catalogLabel}. Hozzáadsz mégegyet {catalogLabel}?",
                     "ADD_ANOTHER": "Hozzáadás",
@@ -1271,9 +1275,17 @@
                     "BROWN": "Barna",
                     "NAVY": "Sötétkék",
                     "CYAN": "Cián"
+                },
+                "ERROR": {
+                    "TITLE": "Hiba",
+                    "DESCRIPTION": "Hiba történt a címke létrehozása során.",
+                    "TITLE_EXISTS": "A megadott címke már létezik",
+                    "OK": "OK"
                 }
             },
             "MISC": {
+                "TABLET": "Tablet",
+                "PHONE": "Telefon",
                 "SOON": "Hamarosan",
                 "UNKNOWN": "Ismeretlen",
                 "MINUTES": "{minutes}p",
@@ -1284,6 +1296,7 @@
                 "REMOVE_AVATAR": "Profilkép eltávolítása",
                 "SET_CALLSIGN": "Hívójel beállítása",
                 "SET_WAYPOINT": "Útpont beállítása",
+                "SET_WAYPOINT_DESCRIPTION": "Biztosan be szeretnéd állítani ezt az útpontot?",
                 "WAYPOINT_SET": "Útpont beállítva",
                 "WAYPOINT_SET_DESCRIPTION": "Az útpont a helyszínre lett beállítva",
                 "CALLSIGN": {
