@@ -589,7 +589,6 @@
                     "CHANGE_POINTS_TITLE": "Set points",
                     "CHANGE_POINTS_DESCRIPTION": "Points for {license} (0–{limit})",
                     "CHANGE_POINTS_PLACEHOLDER": "Points",
-                    "DELETE_LICENSE": "Delete license",
                     "REVOKE_LICENSE": {
                         "TITLE": "Revoke License",
                         "DESCRIPTION": "Are you sure you want to revoke the license {license}?",
@@ -1276,6 +1275,12 @@
                     "BROWN": "Brown",
                     "NAVY": "Navy",
                     "CYAN": "Cyan"
+                },
+                "ERROR": {
+                    "TITLE": "Error",
+                    "DESCRIPTION": "An error occurred while creating the tag.",
+                    "TITLE_EXISTS": "A tag with the same title already exists",
+                    "OK": "OK"
                 }
             },
             "MISC": {
@@ -1291,6 +1296,7 @@
                 "REMOVE_AVATAR": "Remove Avatar",
                 "SET_CALLSIGN": "Set Callsign",
                 "SET_WAYPOINT": "Set Waypoint",
+                "SET_WAYPOINT_DESCRIPTION": "Are you sure you want to set this waypoint?",
                 "WAYPOINT_SET": "Waypoint set",
                 "WAYPOINT_SET_DESCRIPTION": "The waypoint has been set to the location",
                 "CALLSIGN": {
@@ -1449,7 +1455,7 @@
             "AIRDROP_SENT": "Sent",
             "AIRDROP_ACCEPTED": "Accepted",
             "AIRDROP_DECLINED": "Declined",
-            "AIRDROP_NO_USERS": "No phones nearby",
+            "AIRDROP_NO_USERS": "No devices nearby",
             "WALLPAPER_POPUP": {
                 "TITLE": "Use as Wallpaper",
                 "TEXT": "Are you sure you want to set this image as your wallpaper?",
