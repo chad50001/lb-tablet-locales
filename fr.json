@@ -585,6 +585,13 @@
                     "ADD_LICENSE": "Ajouter un permis",
                     "ADD": "Ajouter",
                     "NO_LICENSES": "Aucun Permis",
+                    "POINTS": "pts",
+                    "POINTS_LABEL": "{current}/{limit} pts",
+                    "CHANGE_POINTS": "Changer les points",
+                    "CHANGE_POINTS_TITLE": "Définir les points",
+                    "CHANGE_POINTS_DESCRIPTION": "Points pour {license} (0–{limit})",
+                    "CHANGE_POINTS_PLACEHOLDER": "Points",
+                    "DELETE_LICENSE": "Supprimer le permis",
                     "REVOKE_LICENSE": {
                         "TITLE": "Retrait du permis",
                         "DESCRIPTION": "Êtes-vous sur de vouloir retirer le permis: {license}?",
@@ -613,8 +620,11 @@
                     "TITLE": "Amender Joueur",
                     "DESCRIPTION": "Voulez-vous amender {name}?",
                     "DESCRIPTION_DETAILS": "Merci de renseigner la somme et la raison.",
-                    "FINE_WITH_OFFENCE": "Amender avec infraction",
-                    "FINE_WITHOUT_OFFENCE": "Amender sans infraction",
+                    "FINE_WITH_X": "Amender avec {catalogLabel}",
+                    "FINE_WITHOUT_X": "Amender sans {catalogLabel}",
+                    "X_ADDED": "{catalogLabel} ajouté",
+                    "ADD_MORE_X": "Ajout: {catalogLabel}. Ajouter un autre {catalogLabel}?",
+                    "ADD_ANOTHER": "Ajouter un autre",
                     "CANCEL": "Annuler",
                     "PROCEED": "Valider",
                     "FINE": "Amende",
@@ -762,8 +772,14 @@
                 "INACTIVE": "Inactif",
                 "CLOSED": "Clôturé",
                 "SET_LOCATION": "Définir l'emplacement",
+                "ADD_LOCATION": "Ajouter un emplacement",
                 "USE_CURRENT_LOCATION": "Utiliser l'emplacement actuel",
+                "ADD_CURRENT_LOCATION": "Ajouter l'emplacement actuel",
                 "NO_LOCATION_SET": "Aucun emplacement défini",
+                "REMOVE_LOCATION": {
+                    "TITLE": "Remove Location",
+                    "DESCRIPTION": "Are you sure you want to remove this location?"
+                },
                 "REMOVE_TARGET": {
                     "TITLE": "Retirer la cible",
                     "DESCRIPTION": "Êtes-vous sûr de vouloir retirer la cible ?"
@@ -795,6 +811,10 @@
                 "REMOVE_CIVILIAN": {
                     "TITLE": "Retirer le civil",
                     "DESCRIPTION": "Êtes-vous sûr de vouloir retirer {name} ?"
+                },
+                "REMOVE_CRIMINAL": {
+                    "TITLE": "Retirer le suspect",
+                    "DESCRIPTION": "Êtes-vous sûr de vouloir retirer {name}?"
                 },
                 "CRIMINALS_INVOLVED": "Suspects impliqués",
                 "NO_CRIMINALS_INVOLVED": "Aucun suspect impliqué",
@@ -901,6 +921,9 @@
                 "SET_AVATAR": "Définir l'Avatar",
                 "REMOVE_AVATAR": "Supprimer l'vatar",
                 "MANAGE": "Gérer",
+                "REPLY": "Répondre",
+                "REPLYING_TO": "En réponse à",
+                "ATTACHMENT": "Pièce jointe",
                 "LEAVE": {
                     "TITLE": "Quitter",
                     "DESCRIPTION": "Êtes-vous sur de vouloir quitter ce Chat?"
@@ -1258,6 +1281,8 @@
                 }
             },
             "MISC": {
+                "TABLET": "Tablette",
+                "PHONE": "Téléphone",
                 "SOON": "Prochainement",
                 "UNKNOWN": "Inconnu",
                 "MINUTES": "{minutes}m",
@@ -1492,6 +1517,8 @@
         "FONT_AND_COLOR": "Police et Couleure"
     },
     "MISC": {
+        "COPY": "Copier",
+        "OPEN_IN_BROWSER": "Ouvrir dans le navigateur",
         "GENDERS": {
             "MALE": "Homme",
             "FEMALE": "Femme"
@@ -1653,156 +1680,8 @@
                 "CODE": "10-31"
             }
         },
-        "POLICE": {
-            "EVIDENCE_LABEL": "Preuves: Dossier n°{id}",
-            "NEW_BULLETIN_NOTIFICATION": {
-                "TITLE": "Nouveau Bulletin",
-                "CONTENT": "{title}"
-            },
-            "NEW_CASE_NOTIFICATION": {
-                "TITLE": "Nouveau Dossier",
-                "CONTENT": "{title}"
-            },
-            "NEW_REPORT_NOTIFICATION": {
-                "TITLE": "Nouveau Rapport",
-                "CONTENT": "{title}"
-            },
-            "NEW_WARRANT_NOTIFICATION": {
-                "TITLE": "Nouveau Mandat",
-                "CONTENT": "{title}"
-            },
-            "NEW_CHAT_CHANNEL_NOTIFICATION": {
-                "TITLE": "Nouvelle Conversation",
-                "CONTENT": "{channel}"
-            },
-            "CHAT_MESSAGE_NOTIFICATION": {
-                "TITLE": "Nouveau Message dans {channel}",
-                "CONTENT": "{message}"
-            },
-            "LOGS": {
-                "CREATE_OFFENCE_CATEGORY": {
-                    "TITLE": "Création d'une catégorie d'infraction",
-                    "DESCRIPTION": "'{name}' a créé la catégorie"
-                },
-                "DELETE_OFFENCE_CATEGORY": {
-                    "TITLE": "Suppression d'une catégorie d'infraction",
-                    "DESCRIPTION": "Supprimer la catégorie '{name}'"
-                },
-                "UPDATE_OFFENCE_CATEGORY": {
-                    "TITLE": "Mise à jour d'une catégorie d'infraction",
-                    "DESCRIPTION": "A renommer la catégorie '{oldName}' à {newName}"
-                },
-                "CREATE_OFFENCE": {
-                    "TITLE": "Création d'une infaction",
-                    "DESCRIPTION": "Création de l'infraction {class} '{name}' dans '{category}'"
-                },
-                "DELETE_OFFENCE": {
-                    "TITLE": "Suppression d'une infraction",
-                    "DESCRIPTION": "Suppression de l'infraction '{name}' dans '{category}'"
-                },
-                "UPDATE_OFFENCE": {
-                    "TITLE": "Mettre à jour l'infraction",
-                    "DESCRIPTION": "Mise à jour de l'infraction '{name}' dans '{category}'"
-                }
-            },
-            "WIRETAP_NOTIFICATION": {
-                "TITLE": "Appel sur écoute",
-                "CONTENT": "Le numéro de téléphone mis sur écoute {number} est dans un appel."
-            },
-            "CANT_JAIL_YOURSELF_NOTIFICATION": {
-                "TITLE": "Impossible d'emprisonner",
-                "CONTENT": "Vous ne pouvez pas vous emprisonner vous-même."
-            }
-        },
-        "AMBULANCE": {
-            "NOTIFICATIONS": {
-                "CHAT": {
-                    "NEW_CHANNEL": {
-                        "TITLE": "Nouvelle conversation",
-                        "CONTENT": "{channel}"
-                    },
-                    "NEW_MESSAGE": {
-                        "TITLE": "Nouveau message dans {channel}",
-                        "CONTENT": "{message}"
-                    }
-                },
-                "NEW_BULLETIN": {
-                    "TITLE": "Nouveau bulletin",
-                    "CONTENT": "{title}"
-                },
-                "NEW_REPORT": {
-                    "TITLE": "Nouveau rapport",
-                    "CONTENT": "{title}"
-                }
-            },
-            "TAG_TYPES": {
-                "PROFILE": "profile",
-                "REPORT": "rapport",
-                "PROPERTY": "propriété",
-                "WEAPON": "armes"
-            },
-            "LOGS": {
-                "CREATE_CONDITION_CATEGORY": {
-                    "TITLE": "Créé une catégorie de conditions",
-                    "DESCRIPTION": "A créé la catégorie '{name}'"
-                },
-                "DELETE_CONDITION_CATEGORY": {
-                    "TITLE": "Suppression d'une catégorie de condition",
-                    "DESCRIPTION": "A supprimé la catégorie '{name}'"
-                },
-                "UPDATE_CONDITION_CATEGORY": {
-                    "TITLE": "Mise à jour d'une catégorie de conditions",
-                    "DESCRIPTION": "Renommer la catégorie de conditions de '{oldName}' a {newName}"
-                },
-                "CREATE_CONDITION": {
-                    "TITLE": "Création d'une condition",
-                    "DESCRIPTION": "A créé une condition {severity} nommé '{name}' dans '{category}'"
-                },
-                "DELETE_CONDITION": {
-                    "TITLE": "Suppression d'une condition",
-                    "DESCRIPTION": "A supprimé la conditon nommée '{name}' dans '{category}'"
-                },
-                "UPDATE_CONDITION": {
-                    "TITLE": "Mise à jour d'une condition",
-                    "DESCRIPTION": "A mis à jour de la condition '{name}' dans '{category}'"
-                },
-                "CREATE_BULLETIN": {
-                    "TITLE": "Création d'un rapport",
-                    "DESCRIPTION": "A créer un rapport '{title}'"
-                },
-                "UPDATE_BULLETIN": {
-                    "TITLE": "Mise à jour d'un bulletin",
-                    "DESCRIPTION": "Mise à jour du bulletin '{title}'"
-                },
-                "DELETE_BULLETIN": {
-                    "TITLE": "Suppression d'un rapport",
-                    "DESCRIPTION": "A supprimé le rapport: {id}"
-                },
-                "PIN_BULLETIN": {
-                    "TITLE": "A épinglé un rapport",
-                    "DESCRIPTION": "Le rapport {id} a été épinglé"
-                },
-                "UNPIN_BULLETIN": {
-                    "TITLE": "Retrait de rapport épinglé",
-                    "DESCRIPTION": "A retirer des épinglés le rapport {id}"
-                },
-                "DELETE_TAG": {
-                    "TITLE": "Suppression d'un tag",
-                    "DESCRIPTION": "A supprimé le tag '{name}'"
-                },
-                "UPDATE_PROFILE": {
-                    "TITLE": "Mise à jour de Profile",
-                    "DESCRIPTION": "Mise à jour du profile de {name}"
-                },
-                "CREATE_REPORT": {
-                    "TITLE": "Création d'un rapport",
-                    "DESCRIPTION": "A créer un rapport {type} intitulé '{title}' pour {patient} avec ud {id}"
-                },
-                "UPDATE_REPORT": {
-                    "TITLE": "Mise à jour de Rapport",
-                    "DESCRIPTION": "Mise à jour du rapport {type} intitulé '{title}' avec ud {id}"
-                }
-            }
+        "MDT": {
+            "EVIDENCE_LABEL": "Preuve - {label} {id}"
         },
         "MDT_NOTIFICATIONS": {
             "NEW_CHAT_CHANNEL": {
@@ -1817,6 +1696,10 @@
             "CHAT_INVITE": {
                 "TITLE": "Invitation de Chat",
                 "CONTENT": "Vous avez été invité à rejoindre '{channel}'"
+            },
+            "CHAT_REACTION": {
+                "TITLE": "{name} a réagit a votre message",
+                "CONTENT": "{name} a régit avec {reaction} a votre message dans {channel}"
             },
             "NEW_BULLETIN": {
                 "TITLE": "Nouveau Bulletin",
@@ -1837,6 +1720,18 @@
             "NEW_REPORT": {
                 "TITLE": "Nouveau {report_name}",
                 "CONTENT": "{title}"
+            },
+            "CANT_FINE_YOURSELF": {
+                "TITLE": "Impossible d'amender",
+                "CONTENT": "Vous ne pouvez vous donnez une amende."
+            },
+            "CANT_JAIL_YOURSELF": {
+                "TITLE": "Échec de l'incarcération",
+                "CONTENT": "Vous ne pouvez pas vous emprisonner."
+            },
+            "WIRETAP": {
+                "TITLE": "Appel mis sur écoute",
+                "CONTENT": "Le numéro de téléphone mis sur écoute {number} est actif."
             }
         }
     },
