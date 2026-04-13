@@ -617,8 +617,8 @@
                     "TITLE": "Játékos megbírságolása",
                     "DESCRIPTION": "Meg szeretnéd bírságolni {name} személyt?",
                     "DESCRIPTION_DETAILS": "Kérjük add meg az összeget és a leírást",
-                    "FINE_WITH_X": "Bírság jogsértéssel",
-                    "FINE_WITHOUT_X": "Bírság jogsértés nélkül",
+                    "FINE_WITH_OFFENCE": "Bírság jogsértéssel",
+                    "FINE_WITHOUT_OFFENCE": "Bírság jogsértés nélkül",
                     "X_ADDED": "{catalogLabel} hozzáadva",
                     "ADD_MORE_X": "Hozzáadva: {catalogLabel}. Hozzáadsz mégegyet {catalogLabel}?",
                     "ADD_ANOTHER": "Hozzáadás",
@@ -630,6 +630,8 @@
                     "SEND_FINE": "Bírság küldése",
                     "SUCCESS": "Sikeres",
                     "FINE_SENT": "Bírság elküldve {name} személynek",
+                    "ERROR": "Hiba",
+                    "FINE_FAILED": "Nem sikerült elküldeni a bírságot {name} személynek",
                     "OK": "OK"
                 }
             },
@@ -819,6 +821,18 @@
                     "TITLE": "Gyanúsított eltávolítása",
                     "DESCRIPTION": "Biztosan eltávolítod {name} személyt?"
                 },
+                "VISIBILITY": {
+                    "TITLE": "Láthatóság",
+                    "PUBLIC": "Publikus",
+                    "PRIVATE": "Privát"
+                },
+                "REMOVE_USER": {
+                    "TITLE": "Felhasználó eltávolítása",
+                    "DESCRIPTION": "Biztosan eltávolítod {name} személyt?"
+                },
+                "ADD_USER": "Felhasználó hozzáadása",
+                "SHARED_WITH": "Megosztva vele",
+                "NO_SHARED_USERS": "Nincs olyan felhasználó, aki hozzáférne ehhez a jelentéshez",
                 "SEND_FINE": {
                     "TITLE": "Bírság küldése",
                     "DESCRIPTION": "El szeretnéd küldeni a {fine} összegű bírságot {name} személynek?"
@@ -966,7 +980,6 @@
             },
             "PHONE": {
                 "TITLE": "Telefon",
-                "MESSAGES": "Üzenetek",
                 "TRIANGULATE": {
                     "TITLE": "Helymeghatározás",
                     "DESCRIPTION": "Add meg a helymeghatározni kívánt telefonszámot",
@@ -1017,6 +1030,41 @@
                     "CALL_ENDED": {
                         "TITLE": "Hívás véget ért",
                         "DESCRIPTION": "A lehallgatott hívás véget ért."
+                    }
+                },
+                "MESSAGES": {
+                    "TITLE": "Üzenetek",
+                    "SEARCH": "Üzenetek keresése",
+                    "SEARCH_CONVERSATIONS": "Beszélgetések keresése",
+                    "MESSAGE_HISTORY": "Üzenettörténet",
+                    "CONVERSATIONS": "Beszélgetések",
+                    "CREATED_BY": "Létrehozta: {name}",
+                    "SUBSCRIBED": "Feliratkozott",
+                    "NOT_SUBSCRIBED": "Nem feliratkozott",
+                    "RECEIVED": "Megérkezett",
+                    "READ": "Elolvasva",
+                    "DELIVERED": "Kézbesítve",
+                    "SENT": "Elküldve",
+
+                    "NO_MESSAGES_FOUND": "Nem található üzenet ebben a beszélgetésben.",
+                    "CHOOSE_CONVERSATION": "Válassz egy beszélgetést a bal oldalon az üzenetek megtekintéséhez.",
+                    "NO_MESSAGE_CONTENT": "Nincs üzenettartalom",
+
+                    "WIRETAP": {
+                        "TITLE": "Lehallgatás",
+                        "DESCRIPTION": "Add meg a lehallgatni kívánt telefonszámot.",
+                        "PLACEHOLDER": "Telefonszám"
+                    },
+                    "REMOVE_WIRETAP": {
+                        "TITLE": "Lehallgatás eltávolítása",
+                        "DESCRIPTION": "Biztosan el szeretnéd távolítani a lehallgatást a(z) {phoneNumber} telefonszámról?"
+                    },
+                    "EMBED": {
+                        "MISSED_CALL_IN": "Nem fogadott hívás: {number}",
+                        "MISSED_CALL_OUT": "Nem fogadott hívás (kimenő)",
+                        "SENT_LOCATION": "{name} megosztotta a tartózkodási helyét — koppints a térképre útvonal beállításához",
+                        "SENT_LOCATION_SELF": "Megosztott tartózkodási hely — koppints a térképre útvonal beállításához",
+                        "PAY_REQUESTED": "kérte"
                     }
                 },
                 "UNLOCK": {
