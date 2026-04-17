@@ -632,6 +632,8 @@
                     "SEND_FINE": "Envoyer l'Amende",
                     "SUCCESS": "Succès",
                     "FINE_SENT": "Amende envoyée à {name}",
+                    "ERROR": "Erreure",
+                    "FINE_FAILED": "Échec de l'envoi de l'amende à {name}",
                     "OK": "OK"
                 }
             },
@@ -821,6 +823,18 @@
                     "TITLE": "Retirer le suspect",
                     "DESCRIPTION": "Êtes-vous sûr de vouloir retirer {name} ?"
                 },
+                "VISIBILITY": {
+                    "TITLE": "Visibilité",
+                    "PUBLIC": "Publique",
+                    "PRIVATE": "Privé"
+                },
+                "REMOVE_USER": {
+                    "TITLE": "Retiré Utilisateur",
+                    "DESCRIPTION": "Êtes vous sur de vouloir retirer {name} de ce rapport?"
+                },
+                "ADD_USER": "Ajouter Utilisateur",
+                "SHARED_WITH": "Partagé avec",
+                "NO_SHARED_USERS": "Aucun utilisateur a accès a ce rapport",
                 "SEND_FINE": {
                     "TITLE": "Envoyer l'amende",
                     "DESCRIPTION": "Voulez-vous envoyer une amende de {fine} à {name} ?"
@@ -968,7 +982,6 @@
             },
             "PHONE": {
                 "TITLE": "Téléphone",
-                "MESSAGES": "Messages",
                 "TRIANGULATE": {
                     "TITLE": "Trianguler",
                     "DESCRIPTION": "Saisissez le numéro de téléphone que vous souhaitez trianguler",
@@ -1019,6 +1032,41 @@
                     "CALL_ENDED": {
                         "TITLE": "Appel terminé",
                         "DESCRIPTION": "L'appel que vous avez mis sur écoute est terminé."
+                    }
+                },
+                "MESSAGES": {
+                    "TITLE": "Messages",
+                    "SEARCH": "Recherche de Messages",
+                    "SEARCH_CONVERSATIONS": "Recherche de Conversations",
+                    "MESSAGE_HISTORY": "Historique de Messages",
+                    "CONVERSATIONS": "Conversations",
+                    "CREATED_BY": "Créer par {name}",
+                    "SUBSCRIBED": "Abonné",
+                    "NOT_SUBSCRIBED": "Non Abonné",
+                    "RECEIVED": "Reçu",
+                    "READ": "Lu",
+                    "DELIVERED": "Livré",
+                    "SENT": "Envoyé",
+
+                    "NO_MESSAGES_FOUND": "Aucun message trouvé dans cette conversation.",
+                    "CHOOSE_CONVERSATION": "Choisissez une conversation à gauche pour consulter les messages.",
+                    "NO_MESSAGE_CONTENT": "Aucun contenu de message",
+
+                    "WIRETAP": {
+                        "TITLE": "Mise sur écoute",
+                        "DESCRIPTION": "Entrez le numéro de téléphone que vous souhaitez mettre sur écoute pour les messages.",
+                        "PLACEHOLDER": "Numéro de téléphone"
+                    },
+                    "REMOVE_WIRETAP": {
+                        "TITLE": "Retirer la mise sur écoute",
+                        "DESCRIPTION": "Êtes-vous sûr de vouloir retirer la mise sur écoute du numéro de téléphone {phoneNumber} ?"
+                    },
+                    "EMBED": {
+                        "MISSED_CALL_IN": "Appel manqué de {number}",
+                        "MISSED_CALL_OUT": "Appel manqué (sortant)",
+                        "SENT_LOCATION": "{name} a partagé sa position — appuyez sur la carte pour définir un point de passage",
+                        "SENT_LOCATION_SELF": "Position partagée — appuyez sur la carte pour définir un point de passage",
+                        "PAY_REQUESTED": "a demandé"
                     }
                 },
                 "UNLOCK": {
