@@ -630,6 +630,8 @@
                     "SEND_FINE": "Send Fine",
                     "SUCCESS": "Success",
                     "FINE_SENT": "Fine sent to {name}",
+                    "ERROR": "Error",
+                    "FINE_FAILED": "Failed to send fine to {name}",
                     "OK": "OK"
                 }
             },
@@ -819,6 +821,18 @@
                     "TITLE": "Remove Suspect",
                     "DESCRIPTION": "Are you sure you want to remove {name}?"
                 },
+                "VISIBILITY": {
+                    "TITLE": "Visibility",
+                    "PUBLIC": "Public",
+                    "PRIVATE": "Private"
+                },
+                "REMOVE_USER": {
+                    "TITLE": "Remove User",
+                    "DESCRIPTION": "Are you sure you want to remove {name} from this report?"
+                },
+                "ADD_USER": "Add User",
+                "SHARED_WITH": "Shared With",
+                "NO_SHARED_USERS": "No users have access to this report",
                 "SEND_FINE": {
                     "TITLE": "Send Fine",
                     "DESCRIPTION": "Do you want to send {fine} fine to {name}?"
@@ -966,7 +980,6 @@
             },
             "PHONE": {
                 "TITLE": "Phone",
-                "MESSAGES": "Messages",
                 "TRIANGULATE": {
                     "TITLE": "Triangulate",
                     "DESCRIPTION": "Enter the phone number you want to triangulate",
@@ -1017,6 +1030,41 @@
                     "CALL_ENDED": {
                         "TITLE": "Call Ended",
                         "DESCRIPTION": "The call you wiretapped has ended."
+                    }
+                },
+                "MESSAGES": {
+                    "TITLE": "Messages",
+                    "SEARCH": "Search Messages",
+                    "SEARCH_CONVERSATIONS": "Search Conversations",
+                    "MESSAGE_HISTORY": "Message History",
+                    "CONVERSATIONS": "Conversations",
+                    "CREATED_BY": "Created by {name}",
+                    "SUBSCRIBED": "Subscribed",
+                    "NOT_SUBSCRIBED": "Not Subscribed",
+                    "RECEIVED": "Received",
+                    "READ": "Read",
+                    "DELIVERED": "Delivered",
+                    "SENT": "Sent",
+
+                    "NO_MESSAGES_FOUND": "No messages found in this conversation.",
+                    "CHOOSE_CONVERSATION": "Choose a conversation from the left to inspect messages.",
+                    "NO_MESSAGE_CONTENT": "No message content",
+
+                    "WIRETAP": {
+                        "TITLE": "Wiretap",
+                        "DESCRIPTION": "Enter the phone number you want to wiretap for messages.",
+                        "PLACEHOLDER": "Phone Number"
+                    },
+                    "REMOVE_WIRETAP": {
+                        "TITLE": "Remove Wiretap",
+                        "DESCRIPTION": "Are you sure you want to remove the wiretap from the phone number {phoneNumber}?"
+                    },
+                    "EMBED": {
+                        "MISSED_CALL_IN": "Missed call from {number}",
+                        "MISSED_CALL_OUT": "Missed call (outgoing)",
+                        "SENT_LOCATION": "{name} shared their location — tap the map to set a waypoint",
+                        "SENT_LOCATION_SELF": "Shared location — tap the map to set a waypoint",
+                        "PAY_REQUESTED": "requested"
                     }
                 },
                 "UNLOCK": {
