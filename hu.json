@@ -1045,11 +1045,9 @@
                     "READ": "Elolvasva",
                     "DELIVERED": "Kézbesítve",
                     "SENT": "Elküldve",
-
                     "NO_MESSAGES_FOUND": "Nem található üzenet ebben a beszélgetésben.",
                     "CHOOSE_CONVERSATION": "Válassz egy beszélgetést a bal oldalon az üzenetek megtekintéséhez.",
                     "NO_MESSAGE_CONTENT": "Nincs üzenettartalom",
-
                     "WIRETAP": {
                         "TITLE": "Lehallgatás",
                         "DESCRIPTION": "Add meg a lehallgatni kívánt telefonszámot.",

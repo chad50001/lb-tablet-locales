@@ -1047,11 +1047,9 @@
                     "READ": "Lu",
                     "DELIVERED": "Livré",
                     "SENT": "Envoyé",
-
                     "NO_MESSAGES_FOUND": "Aucun message trouvé dans cette conversation.",
                     "CHOOSE_CONVERSATION": "Choisissez une conversation à gauche pour consulter les messages.",
                     "NO_MESSAGE_CONTENT": "Aucun contenu de message",
-
                     "WIRETAP": {
                         "TITLE": "Mise sur écoute",
                         "DESCRIPTION": "Entrez le numéro de téléphone que vous souhaitez mettre sur écoute pour les messages.",
@@ -1850,7 +1848,6 @@
                 "PROFILE.ACTIVEWARRANT.FALSE": "Non",
                 "VEHICLE.ACTIVEWARRANT.TRUE": "Oui",
                 "VEHICLE.ACTIVEWARRANT.FALSE": "Non",
-
                 "TYPE.ASSAULT": "Agression",
                 "TYPE.ROBBERY": "Vol avec violence",
                 "TYPE.BURGLARY": "Cambriolage",
@@ -1873,7 +1870,6 @@
                 "TYPE.IDENTITY_THEFT": "Usurpation d'identité",
                 "TYPE.INTERROGATION": "Interrogatoire",
                 "TYPE.OTHER": "Autre",
-
                 "TYPE.ARREST_WARRANT": "Mandat d'arrêt",
                 "TYPE.SEARCH_WARRANT": "Mandat de perquisition",
                 "TYPE.BENCH_WARRANT": "Mandat judiciaire",
@@ -1882,12 +1878,10 @@
                 "TYPE.MATERIAL_WITNESS_WARRANT": "Mandat de témoin matériel",
                 "TYPE.EXECUTION_WARRANT": "Mandat d'exécution",
                 "TYPE.PAROLE_VIOLATION_WARRANT": "Mandat pour violation de libération conditionnelle",
-
                 "STATUS.ACTIVE": "Actif",
                 "STATUS.SERVED": "Exécuté",
                 "STATUS.EXPIRED": "Expiré",
                 "STATUS.CANCELLED": "Annulé",
-
                 "PRIORITY.LOW": "Faible",
                 "PRIORITY.MEDIUM": "Moyenne",
                 "PRIORITY.HIGH": "Élevée"
@@ -1900,23 +1894,19 @@
                 "PROFILE.IDENTIFIER": "Identifiant",
                 "PROFILE.FINGERPRINT": "Empreinte digitale",
                 "PROFILE.ACTIVEWARRANT": "Mandat actif",
-
                 "VEHICLE.MODEL": "Modèle",
                 "VEHICLE.PLATE": "Plaque",
                 "VEHICLE.COLOR": "Couleur",
                 "VEHICLE.OWNER": "Propriétaire",
                 "VEHICLE.ACTIVEWARRANT": "Mandat actif",
-
                 "PROPERTY.LABEL": "Nom",
                 "PROPERTY.OWNER": "Propriétaire",
                 "PROPERTY.ADDRESS": "Adresse",
-
                 "WEAPON.MODEL": "Modèle",
                 "WEAPON.SERIALNUMBER": "Numéro de série",
                 "WEAPON.OWNER": "Propriétaire"
             }
         },
-
         "Ambulance": {
             "TABS": {
                 "HOME": "Accueil",
@@ -1979,7 +1969,6 @@
                 "PROFILE.BLOODTYPE": "Groupe sanguin"
             }
         },
-
         "Fire": {
             "TABS": {
                 "HOME": "Accueil",
@@ -2023,7 +2012,6 @@
             },
             "ENTITY_FIELDS": {}
         },
-
         "Mechanic": {
             "TABS": {
                 "HOME": "Accueil",
@@ -2075,12 +2063,10 @@
                 "TYPE.TOWING_SERVICE": "Service de remorquage",
                 "TYPE.ROADSIDE_ASSISTANCE": "Assistance routière",
                 "TYPE.OTHER": "Autre",
-
                 "STATUS.IN_PROGRESS": "En cours",
                 "STATUS.COMPLETED": "Terminé",
                 "STATUS.WAITING_PARTS": "En attente de pièces",
                 "STATUS.CANCELLED": "Annulé",
-
                 "PRIORITY.LOW": "Faible",
                 "PRIORITY.NORMAL": "Normale",
                 "PRIORITY.HIGH": "Élevée",
