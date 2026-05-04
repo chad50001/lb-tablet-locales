@@ -607,18 +607,9 @@
                     "OK": "OK"
                 },
                 "VEHICLES": "Fahrzeuge",
-                "NO_VEHICLES": "Keine Fahrzeuge",
                 "PROPERTIES": "Immobilien",
-                "NO_PROPERTIES": "Keine Immobilien",
                 "REPORTS": "Berichte",
-                "NO_REPORTS": "Keine Berichte",
-                "CASES": "Fälle",
-                "NO_CASES": "Keine Fälle",
                 "WEAPONS": "Waffen",
-                "NO_WEAPONS": "Keine Waffen",
-                "WARRANTS": "Haftbefehle",
-                "NO_WARRANTS": "Keine Haftbefehle",
-                "ACTIVE_WARRANTS": "Aktive Haftbefehle",
                 "INVOLVED": "Beteiligt",
                 "CHARGES": "Anklagepunkte",
                 "NO_CHARGES": "Keine Anklagepunkte",
@@ -626,8 +617,8 @@
                     "TITLE": "Spieler bestrafen",
                     "DESCRIPTION": "Möchtest du {name} eine Geldstrafe auferlegen?",
                     "DESCRIPTION_DETAILS": "Bitte fülle den Betrag und die Beschreibung aus",
-                    "FINE_WITH_OFFENCE": "Strafe mit Vergehen",
-                    "FINE_WITHOUT_OFFENCE": "Strafe ohne Vergehen",
+                    "FINE_WITH_X": "Strafe mit {catalogLabel}",
+                    "FINE_WITHOUT_OFFENCE": "Strafe ohne {catalogLabel}",
                     "CANCEL": "Abbrechen",
                     "PROCEED": "Weiter",
                     "FINE": "Strafe",
@@ -665,17 +656,13 @@
                 "SET_WAYPOINT": "Wegpunkt setzen",
                 "OPEN_IN_MAPS": "In Karten öffnen",
                 "WAYPOINT_SET": "Wegpunkt gesetzt",
-                "WAYPOINT_SET_DESCRIPTION": "Der Wegpunkt wurde auf den Standort des Fahrzeugs gesetzt",
-                "CASES": "Fälle",
-                "NO_CASES": "Keine Fälle",
-                "WARRANTS": "Haftbefehle",
-                "NO_WARRANTS": "Keine Haftbefehle",
-                "ACTIVE_WARRANTS": "Aktive Haftbefehle"
+                "WAYPOINT_SET_DESCRIPTION": "Der Wegpunkt wurde auf den Standort des Fahrzeugs gesetzt"
             },
             "PROPERTIES": {
                 "TITLE": "Immobilien",
                 "PROPERTY": "Immobilie",
                 "SEARCH": "Immobilien suchen",
+                "NO_PROPERTIES": "Keine Eigenschaften",
                 "REMOVE_PICTURE": "Bild entfernen",
                 "DETAILS": "Details",
                 "ADD_PHOTO": {
@@ -724,6 +711,10 @@
                 "OWNER": "Besitzer",
                 "SELECT_MODEL": "Modell auswählen",
                 "SELECT_OWNER": "Besitzer auswählen",
+                "REMOVE_OWNER": {
+                    "TITLE": "Besitzer löschen",
+                    "DESCRIPTION": "Möchten Sie {name} wirklich als Eigentümer löschen?"
+                },
                 "DELETE_WEAPON": {
                     "TITLE": "Waffe löschen",
                     "DESCRIPTION": "Bist du sicher, dass du diese Waffe löschen möchtest?"
@@ -775,118 +766,14 @@
                     "DESCRIPTION_LENGTH": "Die Beschreibung muss mindestens 10 Zeichen lang sein"
                 }
             },
-            "CASES": {
-                "TITLE": "Fälle",
-                "SEARCH": "Fälle suchen",
-                "CASE": "Fall",
-                "FOOTER": "{author} - Fall-ID: {id}",
-                "TITLE_PLACEHOLDER": "Neuer Fall",
-                "DESCRIPTION": "Beschreibung",
-                "DESCRIPTION_PLACEHOLDER": "Beschreibung eingeben...",
-                "EVIDENCE": "Beweismittel",
-                "NO_EVIDENCE": "Keine beigefügten Beweismittel",
-                "OPEN_STASH": "Lager öffnen",
-                "VEHICLES_INVOLVED": "Beteiligte Fahrzeuge",
-                "NO_VEHICLES_INVOLVED": "Keine beteiligten Fahrzeuge",
-                "VIEW_PROFILE": "Profil ansehen",
-                "CHARGES": "{amount} Anklagepunkte",
-                "NO_CHARGES": "Keine Anklagepunkte",
-                "REMOVE_VEHICLE": {
-                    "TITLE": "Fahrzeug entfernen",
-                    "DESCRIPTION": "Bist du sicher, dass du das Fahrzeug aus dem Fall entfernen möchtest?"
-                },
-                "REMOVE_WARRANT": {
-                    "TITLE": "Haftbefehl entfernen",
-                    "DESCRIPTION": "Bist du sicher, dass du den Haftbefehl aus dem Fall entfernen möchtest?"
-                },
-                "OFFICERS_INVOLVED": "Beteiligte Beamte",
-                "NO_OFFICERS_INVOLVED": "Keine beteiligten Beamten",
-                "REMOVE_OFFICER": {
-                    "TITLE": "Beamten entfernen",
-                    "DESCRIPTION": "Bist du sicher, dass du den Beamten aus dem Fall entfernen möchtest?"
-                },
-                "CIVILLIANS_INVOLVED": "Beteiligte Zivilisten",
-                "NO_CIVILLIANS_INVOLVED": "Keine beteiligten Zivilisten",
-                "REMOVE_CIVILIAN": {
-                    "TITLE": "Zivilisten entfernen",
-                    "DESCRIPTION": "Bist du sicher, dass du den Zivilisten aus dem Fall entfernen möchtest?"
-                },
-                "CRIMINALS_INVOLVED": "Beteiligte Kriminelle",
-                "NO_CRIMINALS_INVOLVED": "Keine beteiligten Kriminellen",
-                "REMOVE_CRIMINAL": {
-                    "TITLE": "Kriminellen entfernen",
-                    "DESCRIPTION": "Bist du sicher, dass du den Kriminellen aus dem Fall entfernen möchtest?"
-                },
-                "ADD_CHARGE": "Anklage hinzufügen",
-                "FINE": "Strafe ({amount} empfohlen)",
-                "SENTENCE": "Haftstrafe ({amount} Monate empfohlen)",
-                "SEND_FINE": {
-                    "TITLE": "Strafe senden",
-                    "DESCRIPTION": "Möchtest du eine Strafe von {fine} an {name} senden?"
-                },
-                "JAIL_PLAYER": {
-                    "TITLE": "Spieler inhaftieren",
-                    "DESCRIPTION": "Möchtest du {name} für {sentence} Monate ins Gefängnis schicken?",
-                    "JAILED_DESCRIPTION": "Automatisch inhaftiert für {charges}"
-                },
-                "DELETE_CASE": {
-                    "TITLE": "Fall löschen",
-                    "DESCRIPTION": "Bist du sicher, dass du diesen Fall löschen möchtest?"
-                },
-                "ERROR": {
-                    "TITLE": "Fehler",
-                    "TITLE_LENGTH": "Der Titel muss mindestens 3 Zeichen lang sein",
-                    "DESCRIPTION_LENGTH": "Die Beschreibung muss mindestens 10 Zeichen lang sein",
-                    "OK": "OK"
-                }
-            },
-            "WARRANTS": {
-                "TITLE": "Haftbefehle",
-                "SEARCH": "Haftbefehle suchen",
-                "HIGH_PRIORITY": "Hohe Priorität",
-                "MEDIUM_PRIORITY": "Mittlere Priorität",
-                "LOW_PRIORITY": "Niedrige Priorität",
-                "FOOTER": "{author} - Haftbefehl-ID: {id}",
-                "TITLE_PLACEHOLDER": "Neuer Haftbefehl",
-                "DESCRIPTION": "Beschreibung",
-                "DESCRIPTION_PLACEHOLDER": "Beschreibung eingeben...",
-                "TYPE": "Typ",
-                "STATUS": "Status",
-                "PRIORITY": "Priorität",
-                "GALLERY": "Galerie",
-                "NO_ATTACHMENTS": "Keine Anhänge",
-                "LINKED_REPORTS": "Verknüpfte Berichte",
-                "NO_LINKED_REPORTS": "Keine verknüpften Berichte",
-                "SELECT_VEHICLE": "Fahrzeug auswählen",
-                "NO_VEHICLE_SELECTED": "Kein Fahrzeug ausgewählt",
-                "SELECT_PERSON": "Person auswählen",
-                "NO_PERSON_SELECTED": "Keine Person ausgewählt",
-                "ACTIVE": "Aktiv",
-                "INACTIVE": "Inaktiv",
-                "CLOSED": "Geschlossen",
-                "REMOVE_REPORT": {
-                    "TITLE": "Bericht entfernen",
-                    "DESCRIPTION": "Bist du sicher, dass du den Bericht aus dem Haftbefehl entfernen möchtest?"
-                },
-                "DELETE_WARRANT": {
-                    "TITLE": "Haftbefehl löschen",
-                    "DESCRIPTION": "Bist du sicher, dass du diesen Haftbefehl löschen möchtest?"
-                },
-                "ERROR": {
-                    "TITLE": "Fehler",
-                    "TITLE_LENGTH": "Der Titel muss mindestens 3 Zeichen lang sein",
-                    "DESCRIPTION_LENGTH": "Die Beschreibung muss mindestens 10 Zeichen lang sein",
-                    "NO_TYPE": "Du musst einen Haftbefehl-Typ auswählen",
-                    "NO_TARGET": "Du musst ein Ziel für den Haftbefehl auswählen",
-                    "OK": "OK"
-                }
-            },
             "EVIDENCE": {
-                "TITLE": "Beweismittel"
+                "TITLE": "Beweismittel",
+                "OPEN_STASH": "Stash öffnen"
             },
-            "OFFENCES": {
-                "TITLE": "Vergehen",
-                "SEARCH": "Vergehen suchen",
+            "CATALOG": {
+                "TITLE": "Katalog",
+                "SEARCH": "Katalog durchsuchen",
+                "SEARCH_TYPE": "{type} suchen",
                 "MONTHS": "{amount} Monate",
                 "FINE": "{amount} Strafe",
                 "SELECT_SEVERITY": "Schweregrad auswählen",
@@ -895,16 +782,20 @@
                     "MISDEMEANOR": "Vergehen",
                     "FELONY": "Verbrechen"
                 },
-                "NO_OFFENCES_FOUND": "Keine Vergehen gefunden",
-                "ADD_OFFENCE": {
-                    "TITLE": "Vergehen hinzufügen",
-                    "DESCRIPTION": "Erstelle ein neues Vergehen",
-                    "PLACEHOLDER": "Titel des Vergehens eingeben",
+                "NO_ITEMS_FOUND": "Keine Einträge gefunden",
+                "ADD_ITEM": {
+                    "TITLE": "{type} hinzufügen",
+                    "DESCRIPTION": "Neuen Eintrag erstellen",
+                    "PLACEHOLDER": "Titel des Eintrags eingeben",
                     "DESCRIPTION_PLACEHOLDER": "Beschreibung eingeben..."
                 },
-                "EDIT_OFFENCE": {
-                    "TITLE": "Vergehen bearbeiten",
-                    "DESCRIPTION": "Bearbeite die Details des Vergehens"
+                "EDIT_ITEM": {
+                    "TITLE": "Eintrag bearbeiten",
+                    "DESCRIPTION": "Details des Eintrags bearbeiten"
+                },
+                "DELETE_ITEM": {
+                    "TITLE": "Eintrag löschen",
+                    "DESCRIPTION": "Möchtest du diesen Eintrag wirklich löschen?"
                 },
                 "SET_JAILTIME": {
                     "TITLE": "Empfohlene Haftzeit",
@@ -913,12 +804,8 @@
                 },
                 "SET_FINE": {
                     "TITLE": "Empfohlene Strafe",
-                    "DESCRIPTION": "Lege die empfohlene Strafe für das Vergehen fest",
+                    "DESCRIPTION": "Lege die empfohlene Strafe für den Eintrag fest",
                     "PLACEHOLDER": "Empfohlener Strafbetrag (0 nur für Haftzeit)"
-                },
-                "DELETE_OFFENCE": {
-                    "TITLE": "Vergehen löschen",
-                    "DESCRIPTION": "Bist du sicher, dass du dieses Vergehen löschen möchtest?"
                 },
                 "ADD_CATEGORY": {
                     "TITLE": "Kategorie hinzufügen",
@@ -994,7 +881,6 @@
             },
             "PHONE": {
                 "TITLE": "Telefon",
-                "MESSAGES": "Nachrichten",
                 "TRIANGULATE": {
                     "TITLE": "Ortung",
                     "DESCRIPTION": "Gib die Telefonnummer ein, die du orten möchtest",
@@ -1034,6 +920,22 @@
                     "UNSUBSCRIBE_FROM_CALLS_DESCRIPTION": "Bist du sicher, dass du Anrufe deabonnieren möchtest?",
                     "FOOTER": "von {name}",
                     "WIRETAP_PHONENUMBER": {
+                        "TITLE": "Wiretap",
+                        "DESCRIPTION": "Enter the phone number you want to wiretap for messages",
+                        "PLACEHOLDER": "Telefonnummer"
+                    },
+                    "REMOVE_WIRETAP": {
+                        "TITLE": "Abhören beenden",
+                        "DESCRIPTION": "Bist du sicher, dass du das Abhören der Telefonnummer {phoneNumber} beenden möchtest?"
+                    },
+                    "CALL_ENDED": {
+                        "TITLE": "",
+                        "DESCRIPTION": ""
+                    }
+                },
+                "MESSAGES": {
+                    "TITLE": "Nachrichten",
+                    "SUBSCRIBED": "Subscribed",
                     "NOT_SUBSCRIBED": "Not Subscribed",
                     "RECEIVED": "Received",
                     "READ": "Read",
@@ -1879,51 +1781,6 @@
                 "PRIORITY.HIGH": "High"
             },
             "ENTITY_FIELDS": {
-                "PROFILE.DOB": "Date of Birth",
-                "PROFILE.PHONENUMBER": "Phone Number",
-                "PROFILE.GENDER": "Gender",
-                "PROFILE.JOB": "Job",
-                "PROFILE.IDENTIFIER": "Identifier",
-                "PROFILE.FINGERPRINT": "Fingerprint",
-                "PROFILE.ACTIVEWARRANT": "Active Warrant",
-                "VEHICLE.MODEL": "Model",
-                "VEHICLE.PLATE": "Plate",
-                "VEHICLE.COLOR": "Color",
-                "VEHICLE.OWNER": "Owner",
-                "TYPE.HOMICIDE": "Tötungsdelikt",
-                "TYPE.KIDNAPPING": "Entführung",
-                "TYPE.ARSON": "Brandstiftung",
-                "TYPE.VANDALISM": "Vandalismus",
-                "TYPE.DRUG_OFFENSE": "Drogenvergehen",
-                "TYPE.TRAFFIC_VIOLATION": "Verkehrsverstoß",
-                "TYPE.DOMESTIC_VIOLENCE": "Häusliche Gewalt",
-                "TYPE.CYBERCRIME": "Cyberkriminalität",
-                "TYPE.WEAPONS_VIOLATION": "Waffenverstoß",
-                "TYPE.PUBLIC_DISTURBANCE": "Öffentliche Ruhestörung",
-                "TYPE.TRESPASSING": "Hausfriedensbruch",
-                "TYPE.HARASSMENT": "Belästigung",
-                "TYPE.MISSING_PERSON": "Vermisste Person",
-                "TYPE.EXTORTION": "Erpressung",
-                "TYPE.IDENTITY_THEFT": "Identitätsdiebstahl",
-                "TYPE.INTERROGATION": "Verhör",
-                "TYPE.OTHER": "Sonstiges",
-                "TYPE.ARREST_WARRANT": "Haftbefehl",
-                "TYPE.SEARCH_WARRANT": "Durchsuchungsbeschluss",
-                "TYPE.BENCH_WARRANT": "Haftbefehl (Gericht)",
-                "TYPE.EXTRADITION_WARRANT": "Auslieferungshaftbefehl",
-                "TYPE.PROBATION_VIOLATION_WARRANT": "Bewährungsverletzungshaftbefehl",
-                "TYPE.MATERIAL_WITNESS_WARRANT": "Zeugenhaftbefehl",
-                "TYPE.EXECUTION_WARRANT": "Vollstreckungshaftbefehl",
-                "TYPE.PAROLE_VIOLATION_WARRANT": "Führungsaufsichtsverletzungshaftbefehl",
-                "STATUS.ACTIVE": "Aktiv",
-                "STATUS.SERVED": "Vollstreckt",
-                "STATUS.EXPIRED": "Abgelaufen",
-                "STATUS.CANCELLED": "Storniert",
-                "PRIORITY.LOW": "Niedrig",
-                "PRIORITY.MEDIUM": "Mittel",
-                "PRIORITY.HIGH": "Hoch"
-            },
-            "ENTITY_FIELDS": {
                 "PROFILE.DOB": "Geburtsdatum",
                 "PROFILE.PHONENUMBER": "Telefonnummer",
                 "PROFILE.GENDER": "Geschlecht",
@@ -1963,7 +1820,15 @@
                 "DIAGNOSES_CONDITIONS": "Diagnosen / Befunde",
                 "NOTES": "Notizen",
                 "REPORTS": "Medizinische Berichte",
-                "TARGET": "Patient",
+                "TARGET": "Patient"
+            },
+            "STATUSES": {
+                "AVAILABLE": "Available",
+                "BUSY": "Busy",
+                "AT_STATION": "At Station",
+                "ON_CALL": "On Call"
+            },
+            "OPTIONS": {
                 "TYPE.CARDIAC_ARREST": "Cardiac Arrest",
                 "TYPE.STROKE": "Stroke",
                 "TYPE.RESPIRATORY_DISTRESS": "Respiratory Distress",
@@ -2101,5 +1966,4 @@
             }
         }
     }
-}
 }
