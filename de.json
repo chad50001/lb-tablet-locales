@@ -73,6 +73,8 @@
             "DEFAULT": "Standard",
             "PHONE_STORAGE": "Tablet-Speicher",
             "STORAGE": "Speicher",
+            "MICROPHONE": "Mikrofon",
+            "MICROPHONE_DESCRIPTION": "Wählen Sie aus, welches Mikrofon Sie für Aufnahmen verwenden möchten",
             "USED": "Verwendet",
             "OF": "von",
             "DISPLAY_BRIGHTNESS": "Anzeige & Helligkeit",
