@@ -73,6 +73,8 @@
             "DEFAULT": "Default",
             "PHONE_STORAGE": "Tablet Storage",
             "STORAGE": "Storage",
+            "MICROPHONE": "Microphone",
+            "MICROPHONE_DESCRIPTION": "Choose which microphone to use for recordings",
             "USED": "Used",
             "OF": "of",
             "DISPLAY_BRIGHTNESS": "Display & Brightness",
@@ -1045,9 +1047,11 @@
                     "READ": "Read",
                     "DELIVERED": "Delivered",
                     "SENT": "Sent",
+
                     "NO_MESSAGES_FOUND": "No messages found in this conversation.",
                     "CHOOSE_CONVERSATION": "Choose a conversation from the left to inspect messages.",
                     "NO_MESSAGE_CONTENT": "No message content",
+
                     "WIRETAP": {
                         "TITLE": "Wiretap",
                         "DESCRIPTION": "Enter the phone number you want to wiretap for messages.",
