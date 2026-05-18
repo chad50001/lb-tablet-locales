@@ -117,9 +117,7 @@
             "DELETE_TITLE": "Supprimer {title}",
             "DELETE_TEXT": "Êtes-vous sur de vouloir supprimer '{title}'?",
             "BUTTON_CANCEL": "Annuler",
-            "BUTTON_DELETE": "Supprimer",
-            "PHONE": "Téléphone",
-            "TABLET": "Tablette"
+            "BUTTON_DELETE": "Supprimer"
         },
         "CLOCK": {
             "WORLDCLOCK": {
@@ -778,8 +776,8 @@
                 "ADD_CURRENT_LOCATION": "Ajouter l'emplacement actuel",
                 "NO_LOCATION_SET": "Aucun emplacement défini",
                 "REMOVE_LOCATION": {
-                    "TITLE": "Remove Location",
-                    "DESCRIPTION": "Are you sure you want to remove this location?"
+                    "TITLE": "Supprimer l'emplacement",
+                    "DESCRIPTION": "Êtes vous sur de vouloir supprimer cet emplacement?"
                 },
                 "REMOVE_TARGET": {
                     "TITLE": "Retirer la cible",
