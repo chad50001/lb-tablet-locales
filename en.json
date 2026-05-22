@@ -591,6 +591,8 @@
                     "CHANGE_POINTS_TITLE": "Set points",
                     "CHANGE_POINTS_DESCRIPTION": "Points for {license} (0–{limit})",
                     "CHANGE_POINTS_PLACEHOLDER": "Points",
+                    "NO_LICENSES_AVAILABLE": "There are no licenses available to add",
+
                     "REVOKE_LICENSE": {
                         "TITLE": "Revoke License",
                         "DESCRIPTION": "Are you sure you want to revoke the license {license}?",
@@ -615,26 +617,44 @@
                 "INVOLVED": "Involved",
                 "CHARGES": "Charges",
                 "NO_CHARGES": "No Charges",
-                "FINE_PLAYER": {
-                    "TITLE": "Fine Player",
-                    "DESCRIPTION": "Would you like to fine {name}?",
-                    "DESCRIPTION_DETAILS": "Please fill in the amount and description",
-                    "FINE_WITH_X": "Fine with {catalogLabel}",
-                    "FINE_WITHOUT_X": "Fine without {catalogLabel}",
-                    "X_ADDED": "{catalogLabel} added",
-                    "ADD_MORE_X": "Added: {catalogLabel}. Add another {catalogLabel}?",
-                    "ADD_ANOTHER": "Add another",
-                    "CANCEL": "Cancel",
-                    "PROCEED": "Proceed",
-                    "FINE": "Fine",
-                    "AMOUNT_PLACEHOLDER": "Amount",
-                    "DESCRIPTION_PLACEHOLDER": "Description",
-                    "SEND_FINE": "Send Fine",
-                    "SUCCESS": "Success",
-                    "FINE_SENT": "Fine sent to {name}",
-                    "ERROR": "Error",
-                    "FINE_FAILED": "Failed to send fine to {name}",
-                    "OK": "OK"
+                "PUNISHMENT": {
+                    "SHARED": {
+                        "OFFENCES_LABEL": "Offences",
+                        "OFFENCES_HINT": "tap one to remove",
+                        "ADD_OFFENCE": "Add {catalogName}",
+                        "CANCEL": "Cancel",
+                        "SUCCESS_TITLE": "Success",
+                        "ERROR_TITLE": "Error",
+                        "OK": "OK"
+                    },
+                    "FINE": {
+                        "DEFAULT_ACTION": "Fine",
+                        "DEFAULT_ACTION_LOWER": "fine",
+                        "BUTTON": "{action}",
+                        "TITLE": "{action} {name}",
+                        "SEND": "Send {action}",
+                        "AMOUNT_LABEL": "Amount",
+                        "AMOUNT_HINT": "override calculated total",
+                        "TOTAL_LABEL": "Total {actionLower}",
+                        "DESCRIPTION_LABEL": "Description",
+                        "DESCRIPTION_PLACEHOLDER": "Reason for the {actionLower}",
+                        "SUCCESS_DESCRIPTION": "{action} sent to {name}",
+                        "ERROR_DESCRIPTION": "Failed to send {actionLower} to {name}"
+                    },
+                    "JAIL": {
+                        "DEFAULT_ACTION": "Jail",
+                        "BUTTON": "{action}",
+                        "TITLE": "{action} {name}",
+                        "SEND": "Send to {action}",
+                        "SENTENCE_LABEL": "Sentence (months)",
+                        "SENTENCE_HINT": "override calculated total",
+                        "TOTAL_LABEL": "Total sentence",
+                        "TOTAL_SUFFIX": "months",
+                        "REASON_LABEL": "Reason",
+                        "REASON_PLACEHOLDER": "Reason for the sentence",
+                        "SUCCESS_DESCRIPTION": "Jailed {name} for {sentence} months",
+                        "ERROR_DESCRIPTION": "Failed to jail {name}"
+                    }
                 }
             },
             "VEHICLES": {
@@ -873,7 +893,10 @@
                 "SEVERITIES": {
                     "INFRACTION": "Infraction",
                     "MISDEMEANOR": "Misdemeanor",
-                    "FELONY": "Felony"
+                    "FELONY": "Felony",
+                    "PARTS": "Parts",
+                    "LABOR": "Labor",
+                    "SERVICE": "Service"
                 },
                 "NO_ITEMS_FOUND": "No Items Found",
                 "ADD_ITEM": {
@@ -2022,6 +2045,7 @@
                 "UNITS": "Units",
                 "VEHICLES": "Vehicles",
                 "SERVICEREPORTS": "Service Reports",
+                "CATALOG": "Catalog",
                 "EMPLOYEES": "Employees",
                 "CHAT": "Chat",
                 "LOGS": "Logs"
