@@ -617,26 +617,10 @@
                 "INVOLVED": "Involviert",
                 "CHARGES": "Anklagen",
                 "NO_CHARGES": "Keine Anklagen",
-                "FINE_PLAYER": {
-                    "TITLE": "Spieler bestrafen",
-                    "DESCRIPTION": "Möchten Sie {name} bestrafen?",
-                    "DESCRIPTION_DETAILS": "Bitte geben Sie den Betrag und die Beschreibung ein.",
-                    "FINE_WITH_X": "Fine with {catalogLabel}",
-                    "FINE_WITHOUT_X": "Fine without {catalogLabel}",
-                    "X_ADDED": "{catalogLabel} added",
-                    "ADD_MORE_X": "Added: {catalogLabel}. Add another {catalogLabel}?",
-                    "ADD_ANOTHER": "Hinzufügen another",
-                    "CANCEL": "Abbrechen",
-                    "PROCEED": "Fortfahren",
-                    "FINE": "Strafe",
-                    "AMOUNT_PLACEHOLDER": "Betrag",
-                    "DESCRIPTION_PLACEHOLDER": "Beschreibung",
-                    "SEND_FINE": "Geldstrafe senden",
-                    "SUCCESS": "Erfolg",
-                    "FINE_SENT": "Geldstrafe an {name} geschickt",
-                    "ERROR": "Fehler",
-                    "FINE_FAILED": "Failed to send fine to {name}",
-                    "OK": "OK"
+                "PUNISHMENT": {
+                    "SHARED": {},
+                    "FINE": {},
+                    "JAIL": {}
                 }
             },
             "VEHICLES": {
