@@ -591,6 +591,8 @@
                     "CHANGE_POINTS_TITLE": "Définir les points",
                     "CHANGE_POINTS_DESCRIPTION": "Points pour {license} (0–{limit})",
                     "CHANGE_POINTS_PLACEHOLDER": "Points",
+                    "NO_LICENSES_AVAILABLE": "Il n'y a aucun permis disponible à ajouter",
+
                     "REVOKE_LICENSE": {
                         "TITLE": "Retrait du permis",
                         "DESCRIPTION": "Êtes-vous sur de vouloir retirer le permis: {license}?",
