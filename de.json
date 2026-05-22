@@ -591,6 +591,8 @@
                     "CHANGE_POINTS_TITLE": "Setze points",
                     "CHANGE_POINTS_DESCRIPTION": "Points for {license} (0–{limit})",
                     "CHANGE_POINTS_PLACEHOLDER": "Points",
+                    "NO_LICENSES_AVAILABLE": "Es sind keine Lizenzen zum Hinzufügen verfügbar",
+
                     "REVOKE_LICENSE": {
                         "TITLE": "Lizenz entziehen",
                         "DESCRIPTION": "Möchten Sie die Lizenz {license} wirklich entziehen?",
