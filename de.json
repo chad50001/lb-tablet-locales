@@ -859,7 +859,10 @@
                 "SEVERITIES": {
                     "INFRACTION": "Infraction",
                     "MISDEMEANOR": "Misdemeanor",
-                    "FELONY": "Felony"
+                    "FELONY": "Felony",
+                    "PARTS": "Anteile",
+                    "LABOR": "Arbeitskräfte",
+                    "SERVICE": "Service"
                 },
                 "NO_ITEMS_FOUND": "Keine Items Found",
                 "ADD_ITEM": {
@@ -2006,6 +2009,7 @@
                 "UNITS": "Einheiten",
                 "VEHICLES": "Fahrzeuge",
                 "SERVICEREPORTS": "Service Reports",
+                "CATALOG": "Catalog",
                 "EMPLOYEES": "Employees",
                 "CHAT": "Chat",
                 "LOGS": "Logs"
