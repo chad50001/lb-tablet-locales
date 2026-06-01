@@ -893,7 +893,10 @@
                 "SEVERITIES": {
                     "INFRACTION": "Infraction",
                     "MISDEMEANOR": "Délit mineur",
-                    "FELONY": "Crime"
+                    "FELONY": "Crime",
+                    "PARTS": "Pièces",
+                    "LABOR": "Main d'oeuvre",
+                    "SERVICE": "Service"
                 },
                 "NO_ITEMS_FOUND": "Aucun élément trouvé",
                 "ADD_ITEM": {
@@ -2040,6 +2043,7 @@
                 "UNITS": "Unités",
                 "VEHICLES": "Véhicules",
                 "SERVICEREPORTS": "Rapports de service",
+                "CATALOG": "Catalogue",
                 "EMPLOYEES": "Employés",
                 "CHAT": "Chat",
                 "LOGS": "Journaux"
