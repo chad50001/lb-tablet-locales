@@ -73,6 +73,8 @@
             "DEFAULT": "Par défaut",
             "PHONE_STORAGE": "Stockage de la Tablette",
             "STORAGE": "Stockage",
+            "MICROPHONE": "Microphone",
+            "MICROPHONE_DESCRIPTION": "Choisissez le microphone que vous souhaitez utiliser pour vos enregistrements",
             "USED": "Utilisé",
             "OF": "de",
             "DISPLAY_BRIGHTNESS": "Écran & Luminosité",
@@ -117,9 +119,7 @@
             "DELETE_TITLE": "Supprimer {title}",
             "DELETE_TEXT": "Êtes-vous sur de vouloir supprimer '{title}'?",
             "BUTTON_CANCEL": "Annuler",
-            "BUTTON_DELETE": "Supprimer",
-            "PHONE": "Téléphone",
-            "TABLET": "Tablette"
+            "BUTTON_DELETE": "Supprimer"
         },
         "CLOCK": {
             "WORLDCLOCK": {
@@ -591,7 +591,8 @@
                     "CHANGE_POINTS_TITLE": "Définir les points",
                     "CHANGE_POINTS_DESCRIPTION": "Points pour {license} (0–{limit})",
                     "CHANGE_POINTS_PLACEHOLDER": "Points",
-                    "DELETE_LICENSE": "Supprimer le permis",
+                    "NO_LICENSES_AVAILABLE": "Il n'y a aucun permis disponible à ajouter",
+
                     "REVOKE_LICENSE": {
                         "TITLE": "Retrait du permis",
                         "DESCRIPTION": "Êtes-vous sur de vouloir retirer le permis: {license}?",
@@ -609,31 +610,51 @@
                     "INVALID_URL_DESCRIPTION": "L'URL que vous avez saisi n'est pas valid",
                     "OK": "OK"
                 },
-                "VEHICLES": "Vehicles",
-                "PROPERTIES": "Properties",
-                "REPORTS": "Reports",
-                "WEAPONS": "Weapons",
-                "INVOLVED": "Involved",
+                "VEHICLES": "Véhicules",
+                "PROPERTIES": "Propriétés",
+                "REPORTS": "Rapports",
+                "WEAPONS": "Armes",
+                "INVOLVED": "Impliqué(es)",
                 "CHARGES": "Infractions",
                 "NO_CHARGES": "Aucune Infraction",
-                "FINE_PLAYER": {
-                    "TITLE": "Amender Joueur",
-                    "DESCRIPTION": "Voulez-vous amender {name}?",
-                    "DESCRIPTION_DETAILS": "Merci de renseigner la somme et la raison.",
-                    "FINE_WITH_X": "Amender avec {catalogLabel}",
-                    "FINE_WITHOUT_X": "Amender sans {catalogLabel}",
-                    "X_ADDED": "{catalogLabel} ajouté",
-                    "ADD_MORE_X": "Ajout: {catalogLabel}. Ajouter un autre {catalogLabel}?",
-                    "ADD_ANOTHER": "Ajouter un autre",
-                    "CANCEL": "Annuler",
-                    "PROCEED": "Valider",
-                    "FINE": "Amende",
-                    "AMOUNT_PLACEHOLDER": "Somme",
-                    "DESCRIPTION_PLACEHOLDER": "Description",
-                    "SEND_FINE": "Envoyer l'Amende",
-                    "SUCCESS": "Succès",
-                    "FINE_SENT": "Amende envoyée à {name}",
-                    "OK": "OK"
+                "PUNISHMENT": {
+                    "SHARED": {
+                        "OFFENCES_LABEL": "Infraction",
+                        "OFFENCES_HINT": "Clicker pour retirer",
+                        "ADD_OFFENCE": "Ajouter {catalogName}",
+                        "CANCEL": "Annuler",
+                        "SUCCESS_TITLE": "Succès",
+                        "ERROR_TITLE": "Erreure",
+                        "OK": "OK"
+                    },
+                    "FINE": {
+                        "DEFAULT_ACTION": "Amender",
+                        "DEFAULT_ACTION_LOWER": "amender",
+                        "BUTTON": "{action}",
+                        "TITLE": "{action} {name}",
+                        "SEND": "Envoyer {action}",
+                        "AMOUNT_LABEL": "Montant",
+                        "AMOUNT_HINT": "remplacer le total calculé",
+                        "TOTAL_LABEL": "Total {actionLower}",
+                        "DESCRIPTION_LABEL": "Description",
+                        "DESCRIPTION_PLACEHOLDER": "Motif du {actionLower}",
+                        "SUCCESS_DESCRIPTION": "{action} envoyé à {name}",
+                        "ERROR_DESCRIPTION": "Échec de l'envoi de {actionLower} à {name}"
+                    },
+                    "JAIL": {
+                        "DEFAULT_ACTION": "Prison",
+                        "BUTTON": "{action}",
+                        "TITLE": "{action} {name}",
+                        "SEND": "Mettre en {action}",
+                        "SENTENCE_LABEL": "Peine (months)",
+                        "SENTENCE_HINT": "remplacer le total calculé",
+                        "TOTAL_LABEL": "Peine totale",
+                        "TOTAL_SUFFIX": "mois",
+                        "REASON_LABEL": "Raison",
+                        "REASON_PLACEHOLDER": "Raison pour la peine de prison",
+                        "SUCCESS_DESCRIPTION": "{name} a été emprisonné pour {sentence} mois",
+                        "ERROR_DESCRIPTION": "Échec de l'emprisonnement de {name}"
+                    }
                 }
             },
             "VEHICLES": {
@@ -777,8 +798,8 @@
                 "ADD_CURRENT_LOCATION": "Ajouter l'emplacement actuel",
                 "NO_LOCATION_SET": "Aucun emplacement défini",
                 "REMOVE_LOCATION": {
-                    "TITLE": "Remove Location",
-                    "DESCRIPTION": "Are you sure you want to remove this location?"
+                    "TITLE": "Supprimer l'emplacement",
+                    "DESCRIPTION": "Êtes vous sur de vouloir supprimer cet emplacement?"
                 },
                 "REMOVE_TARGET": {
                     "TITLE": "Retirer la cible",
@@ -822,6 +843,18 @@
                     "TITLE": "Retirer le suspect",
                     "DESCRIPTION": "Êtes-vous sûr de vouloir retirer {name} ?"
                 },
+                "VISIBILITY": {
+                    "TITLE": "Visibilité",
+                    "PUBLIC": "Publique",
+                    "PRIVATE": "Privé"
+                },
+                "REMOVE_USER": {
+                    "TITLE": "Retiré Utilisateur",
+                    "DESCRIPTION": "Êtes vous sur de vouloir retirer {name} de ce rapport?"
+                },
+                "ADD_USER": "Ajouter Utilisateur",
+                "SHARED_WITH": "Partagé avec",
+                "NO_SHARED_USERS": "Aucun utilisateur a accès a ce rapport",
                 "SEND_FINE": {
                     "TITLE": "Envoyer l'amende",
                     "DESCRIPTION": "Voulez-vous envoyer une amende de {fine} à {name} ?"
@@ -860,7 +893,10 @@
                 "SEVERITIES": {
                     "INFRACTION": "Infraction",
                     "MISDEMEANOR": "Délit mineur",
-                    "FELONY": "Crime"
+                    "FELONY": "Crime",
+                    "PARTS": "Pièces",
+                    "LABOR": "Main d'oeuvre",
+                    "SERVICE": "Service"
                 },
                 "NO_ITEMS_FOUND": "Aucun élément trouvé",
                 "ADD_ITEM": {
@@ -969,7 +1005,6 @@
             },
             "PHONE": {
                 "TITLE": "Téléphone",
-                "MESSAGES": "Messages",
                 "TRIANGULATE": {
                     "TITLE": "Trianguler",
                     "DESCRIPTION": "Saisissez le numéro de téléphone que vous souhaitez trianguler",
@@ -1020,6 +1055,39 @@
                     "CALL_ENDED": {
                         "TITLE": "Appel terminé",
                         "DESCRIPTION": "L'appel que vous avez mis sur écoute est terminé."
+                    }
+                },
+                "MESSAGES": {
+                    "TITLE": "Messages",
+                    "SEARCH": "Recherche de Messages",
+                    "SEARCH_CONVERSATIONS": "Recherche de Conversations",
+                    "MESSAGE_HISTORY": "Historique de Messages",
+                    "CONVERSATIONS": "Conversations",
+                    "CREATED_BY": "Créer par {name}",
+                    "SUBSCRIBED": "Abonné",
+                    "NOT_SUBSCRIBED": "Non Abonné",
+                    "RECEIVED": "Reçu",
+                    "READ": "Lu",
+                    "DELIVERED": "Livré",
+                    "SENT": "Envoyé",
+                    "NO_MESSAGES_FOUND": "Aucun message trouvé dans cette conversation.",
+                    "CHOOSE_CONVERSATION": "Choisissez une conversation à gauche pour consulter les messages.",
+                    "NO_MESSAGE_CONTENT": "Aucun contenu de message",
+                    "WIRETAP": {
+                        "TITLE": "Mise sur écoute",
+                        "DESCRIPTION": "Entrez le numéro de téléphone que vous souhaitez mettre sur écoute pour les messages.",
+                        "PLACEHOLDER": "Numéro de téléphone"
+                    },
+                    "REMOVE_WIRETAP": {
+                        "TITLE": "Retirer la mise sur écoute",
+                        "DESCRIPTION": "Êtes-vous sûr de vouloir retirer la mise sur écoute du numéro de téléphone {phoneNumber} ?"
+                    },
+                    "EMBED": {
+                        "MISSED_CALL_IN": "Appel manqué de {number}",
+                        "MISSED_CALL_OUT": "Appel manqué (sortant)",
+                        "SENT_LOCATION": "{name} a partagé sa position — appuyez sur la carte pour définir un point de passage",
+                        "SENT_LOCATION_SELF": "Position partagée — appuyez sur la carte pour définir un point de passage",
+                        "PAY_REQUESTED": "a demandé"
                     }
                 },
                 "UNLOCK": {
@@ -1278,6 +1346,12 @@
                     "BROWN": "Brun",
                     "NAVY": "Bleu Marine",
                     "CYAN": "Cyan"
+                },
+                "ERROR": {
+                    "TITLE": "Erreure",
+                    "DESCRIPTION": "Une erreure est survenue lors de la création du Tag.",
+                    "TITLE_EXISTS": "Un Tag exist déjà avec ce nom",
+                    "OK": "OK"
                 }
             },
             "MISC": {
@@ -1293,6 +1367,7 @@
                 "REMOVE_AVATAR": "Supprimer l'Avatar",
                 "SET_CALLSIGN": "Définir l'identifiant radio",
                 "SET_WAYPOINT": "Définir le point du GPS",
+                "SET_WAYPOINT_DESCRIPTION": "Êtes-vous sur de vouloir placer de point de cheminement",
                 "WAYPOINT_SET": "Point GPS placé",
                 "WAYPOINT_SET_DESCRIPTION": "Le point de cheminement a été défini à l'emplacement",
                 "CALLSIGN": {
@@ -1796,7 +1871,6 @@
                 "PROFILE.ACTIVEWARRANT.FALSE": "Non",
                 "VEHICLE.ACTIVEWARRANT.TRUE": "Oui",
                 "VEHICLE.ACTIVEWARRANT.FALSE": "Non",
-
                 "TYPE.ASSAULT": "Agression",
                 "TYPE.ROBBERY": "Vol avec violence",
                 "TYPE.BURGLARY": "Cambriolage",
@@ -1819,7 +1893,6 @@
                 "TYPE.IDENTITY_THEFT": "Usurpation d'identité",
                 "TYPE.INTERROGATION": "Interrogatoire",
                 "TYPE.OTHER": "Autre",
-
                 "TYPE.ARREST_WARRANT": "Mandat d'arrêt",
                 "TYPE.SEARCH_WARRANT": "Mandat de perquisition",
                 "TYPE.BENCH_WARRANT": "Mandat judiciaire",
@@ -1828,12 +1901,10 @@
                 "TYPE.MATERIAL_WITNESS_WARRANT": "Mandat de témoin matériel",
                 "TYPE.EXECUTION_WARRANT": "Mandat d'exécution",
                 "TYPE.PAROLE_VIOLATION_WARRANT": "Mandat pour violation de libération conditionnelle",
-
                 "STATUS.ACTIVE": "Actif",
                 "STATUS.SERVED": "Exécuté",
                 "STATUS.EXPIRED": "Expiré",
                 "STATUS.CANCELLED": "Annulé",
-
                 "PRIORITY.LOW": "Faible",
                 "PRIORITY.MEDIUM": "Moyenne",
                 "PRIORITY.HIGH": "Élevée"
@@ -1846,23 +1917,19 @@
                 "PROFILE.IDENTIFIER": "Identifiant",
                 "PROFILE.FINGERPRINT": "Empreinte digitale",
                 "PROFILE.ACTIVEWARRANT": "Mandat actif",
-
                 "VEHICLE.MODEL": "Modèle",
                 "VEHICLE.PLATE": "Plaque",
                 "VEHICLE.COLOR": "Couleur",
                 "VEHICLE.OWNER": "Propriétaire",
                 "VEHICLE.ACTIVEWARRANT": "Mandat actif",
-
                 "PROPERTY.LABEL": "Nom",
                 "PROPERTY.OWNER": "Propriétaire",
                 "PROPERTY.ADDRESS": "Adresse",
-
                 "WEAPON.MODEL": "Modèle",
                 "WEAPON.SERIALNUMBER": "Numéro de série",
                 "WEAPON.OWNER": "Propriétaire"
             }
         },
-
         "Ambulance": {
             "TABS": {
                 "HOME": "Accueil",
@@ -1925,7 +1992,6 @@
                 "PROFILE.BLOODTYPE": "Groupe sanguin"
             }
         },
-
         "Fire": {
             "TABS": {
                 "HOME": "Accueil",
@@ -1969,7 +2035,6 @@
             },
             "ENTITY_FIELDS": {}
         },
-
         "Mechanic": {
             "TABS": {
                 "HOME": "Accueil",
@@ -1978,6 +2043,7 @@
                 "UNITS": "Unités",
                 "VEHICLES": "Véhicules",
                 "SERVICEREPORTS": "Rapports de service",
+                "CATALOG": "Catalogue",
                 "EMPLOYEES": "Employés",
                 "CHAT": "Chat",
                 "LOGS": "Journaux"
@@ -2021,12 +2087,10 @@
                 "TYPE.TOWING_SERVICE": "Service de remorquage",
                 "TYPE.ROADSIDE_ASSISTANCE": "Assistance routière",
                 "TYPE.OTHER": "Autre",
-
                 "STATUS.IN_PROGRESS": "En cours",
                 "STATUS.COMPLETED": "Terminé",
                 "STATUS.WAITING_PARTS": "En attente de pièces",
                 "STATUS.CANCELLED": "Annulé",
-
                 "PRIORITY.LOW": "Faible",
                 "PRIORITY.NORMAL": "Normale",
                 "PRIORITY.HIGH": "Élevée",

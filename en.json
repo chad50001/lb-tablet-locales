@@ -73,6 +73,8 @@
             "DEFAULT": "Default",
             "PHONE_STORAGE": "Tablet Storage",
             "STORAGE": "Storage",
+            "MICROPHONE": "Microphone",
+            "MICROPHONE_DESCRIPTION": "Choose which microphone to use for recordings",
             "USED": "Used",
             "OF": "of",
             "DISPLAY_BRIGHTNESS": "Display & Brightness",
@@ -589,7 +591,8 @@
                     "CHANGE_POINTS_TITLE": "Set points",
                     "CHANGE_POINTS_DESCRIPTION": "Points for {license} (0–{limit})",
                     "CHANGE_POINTS_PLACEHOLDER": "Points",
-                    "DELETE_LICENSE": "Delete license",
+                    "NO_LICENSES_AVAILABLE": "There are no licenses available to add",
+
                     "REVOKE_LICENSE": {
                         "TITLE": "Revoke License",
                         "DESCRIPTION": "Are you sure you want to revoke the license {license}?",
@@ -614,24 +617,44 @@
                 "INVOLVED": "Involved",
                 "CHARGES": "Charges",
                 "NO_CHARGES": "No Charges",
-                "FINE_PLAYER": {
-                    "TITLE": "Fine Player",
-                    "DESCRIPTION": "Would you like to fine {name}?",
-                    "DESCRIPTION_DETAILS": "Please fill in the amount and description",
-                    "FINE_WITH_X": "Fine with {catalogLabel}",
-                    "FINE_WITHOUT_X": "Fine without {catalogLabel}",
-                    "X_ADDED": "{catalogLabel} added",
-                    "ADD_MORE_X": "Added: {catalogLabel}. Add another {catalogLabel}?",
-                    "ADD_ANOTHER": "Add another",
-                    "CANCEL": "Cancel",
-                    "PROCEED": "Proceed",
-                    "FINE": "Fine",
-                    "AMOUNT_PLACEHOLDER": "Amount",
-                    "DESCRIPTION_PLACEHOLDER": "Description",
-                    "SEND_FINE": "Send Fine",
-                    "SUCCESS": "Success",
-                    "FINE_SENT": "Fine sent to {name}",
-                    "OK": "OK"
+                "PUNISHMENT": {
+                    "SHARED": {
+                        "OFFENCES_LABEL": "Offences",
+                        "OFFENCES_HINT": "tap one to remove",
+                        "ADD_OFFENCE": "Add {catalogName}",
+                        "CANCEL": "Cancel",
+                        "SUCCESS_TITLE": "Success",
+                        "ERROR_TITLE": "Error",
+                        "OK": "OK"
+                    },
+                    "FINE": {
+                        "DEFAULT_ACTION": "Fine",
+                        "DEFAULT_ACTION_LOWER": "fine",
+                        "BUTTON": "{action}",
+                        "TITLE": "{action} {name}",
+                        "SEND": "Send {action}",
+                        "AMOUNT_LABEL": "Amount",
+                        "AMOUNT_HINT": "override calculated total",
+                        "TOTAL_LABEL": "Total {actionLower}",
+                        "DESCRIPTION_LABEL": "Description",
+                        "DESCRIPTION_PLACEHOLDER": "Reason for the {actionLower}",
+                        "SUCCESS_DESCRIPTION": "{action} sent to {name}",
+                        "ERROR_DESCRIPTION": "Failed to send {actionLower} to {name}"
+                    },
+                    "JAIL": {
+                        "DEFAULT_ACTION": "Jail",
+                        "BUTTON": "{action}",
+                        "TITLE": "{action} {name}",
+                        "SEND": "Send to {action}",
+                        "SENTENCE_LABEL": "Sentence (months)",
+                        "SENTENCE_HINT": "override calculated total",
+                        "TOTAL_LABEL": "Total sentence",
+                        "TOTAL_SUFFIX": "months",
+                        "REASON_LABEL": "Reason",
+                        "REASON_PLACEHOLDER": "Reason for the sentence",
+                        "SUCCESS_DESCRIPTION": "Jailed {name} for {sentence} months",
+                        "ERROR_DESCRIPTION": "Failed to jail {name}"
+                    }
                 }
             },
             "VEHICLES": {
@@ -820,6 +843,18 @@
                     "TITLE": "Remove Suspect",
                     "DESCRIPTION": "Are you sure you want to remove {name}?"
                 },
+                "VISIBILITY": {
+                    "TITLE": "Visibility",
+                    "PUBLIC": "Public",
+                    "PRIVATE": "Private"
+                },
+                "REMOVE_USER": {
+                    "TITLE": "Remove User",
+                    "DESCRIPTION": "Are you sure you want to remove {name} from this report?"
+                },
+                "ADD_USER": "Add User",
+                "SHARED_WITH": "Shared With",
+                "NO_SHARED_USERS": "No users have access to this report",
                 "SEND_FINE": {
                     "TITLE": "Send Fine",
                     "DESCRIPTION": "Do you want to send {fine} fine to {name}?"
@@ -858,7 +893,10 @@
                 "SEVERITIES": {
                     "INFRACTION": "Infraction",
                     "MISDEMEANOR": "Misdemeanor",
-                    "FELONY": "Felony"
+                    "FELONY": "Felony",
+                    "PARTS": "Parts",
+                    "LABOR": "Labor",
+                    "SERVICE": "Service"
                 },
                 "NO_ITEMS_FOUND": "No Items Found",
                 "ADD_ITEM": {
@@ -967,7 +1005,6 @@
             },
             "PHONE": {
                 "TITLE": "Phone",
-                "MESSAGES": "Messages",
                 "TRIANGULATE": {
                     "TITLE": "Triangulate",
                     "DESCRIPTION": "Enter the phone number you want to triangulate",
@@ -1018,6 +1055,41 @@
                     "CALL_ENDED": {
                         "TITLE": "Call Ended",
                         "DESCRIPTION": "The call you wiretapped has ended."
+                    }
+                },
+                "MESSAGES": {
+                    "TITLE": "Messages",
+                    "SEARCH": "Search Messages",
+                    "SEARCH_CONVERSATIONS": "Search Conversations",
+                    "MESSAGE_HISTORY": "Message History",
+                    "CONVERSATIONS": "Conversations",
+                    "CREATED_BY": "Created by {name}",
+                    "SUBSCRIBED": "Subscribed",
+                    "NOT_SUBSCRIBED": "Not Subscribed",
+                    "RECEIVED": "Received",
+                    "READ": "Read",
+                    "DELIVERED": "Delivered",
+                    "SENT": "Sent",
+
+                    "NO_MESSAGES_FOUND": "No messages found in this conversation.",
+                    "CHOOSE_CONVERSATION": "Choose a conversation from the left to inspect messages.",
+                    "NO_MESSAGE_CONTENT": "No message content",
+
+                    "WIRETAP": {
+                        "TITLE": "Wiretap",
+                        "DESCRIPTION": "Enter the phone number you want to wiretap for messages.",
+                        "PLACEHOLDER": "Phone Number"
+                    },
+                    "REMOVE_WIRETAP": {
+                        "TITLE": "Remove Wiretap",
+                        "DESCRIPTION": "Are you sure you want to remove the wiretap from the phone number {phoneNumber}?"
+                    },
+                    "EMBED": {
+                        "MISSED_CALL_IN": "Missed call from {number}",
+                        "MISSED_CALL_OUT": "Missed call (outgoing)",
+                        "SENT_LOCATION": "{name} shared their location — tap the map to set a waypoint",
+                        "SENT_LOCATION_SELF": "Shared location — tap the map to set a waypoint",
+                        "PAY_REQUESTED": "requested"
                     }
                 },
                 "UNLOCK": {
@@ -1276,6 +1348,12 @@
                     "BROWN": "Brown",
                     "NAVY": "Navy",
                     "CYAN": "Cyan"
+                },
+                "ERROR": {
+                    "TITLE": "Error",
+                    "DESCRIPTION": "An error occurred while creating the tag.",
+                    "TITLE_EXISTS": "A tag with the same title already exists",
+                    "OK": "OK"
                 }
             },
             "MISC": {
@@ -1291,6 +1369,7 @@
                 "REMOVE_AVATAR": "Remove Avatar",
                 "SET_CALLSIGN": "Set Callsign",
                 "SET_WAYPOINT": "Set Waypoint",
+                "SET_WAYPOINT_DESCRIPTION": "Are you sure you want to set this waypoint?",
                 "WAYPOINT_SET": "Waypoint set",
                 "WAYPOINT_SET_DESCRIPTION": "The waypoint has been set to the location",
                 "CALLSIGN": {
@@ -1449,7 +1528,7 @@
             "AIRDROP_SENT": "Sent",
             "AIRDROP_ACCEPTED": "Accepted",
             "AIRDROP_DECLINED": "Declined",
-            "AIRDROP_NO_USERS": "No phones nearby",
+            "AIRDROP_NO_USERS": "No devices nearby",
             "WALLPAPER_POPUP": {
                 "TITLE": "Use as Wallpaper",
                 "TEXT": "Are you sure you want to set this image as your wallpaper?",
@@ -1966,6 +2045,7 @@
                 "UNITS": "Units",
                 "VEHICLES": "Vehicles",
                 "SERVICEREPORTS": "Service Reports",
+                "CATALOG": "Catalog",
                 "EMPLOYEES": "Employees",
                 "CHAT": "Chat",
                 "LOGS": "Logs"

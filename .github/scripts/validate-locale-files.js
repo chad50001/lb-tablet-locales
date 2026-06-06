@@ -11,9 +11,9 @@ function validateEnJsonFile(fileName) {
 
         const checkKeys = (obj, parentKey = '') => {
             for (const key of Object.keys(obj)) {
-                if (!/^[A-Z0-9_-]+$/.test(key)) {
+                if (!/^[A-Za-z0-9./_-]+$/.test(key)) {
                     throw new Error(
-                        `Key '${parentKey}${key}' in file '${fileName}' is not in uppercase or contains invalid characters.`
+                        `Key '${parentKey}${key}' in file '${fileName}' contains invalid characters.`
                     );
                 }
                 if (typeof obj[key] === 'object' && obj[key] !== null && key !== 'APP_NAMES') {
@@ -68,7 +68,7 @@ function validateJsonFile(fileName, skipRecap) {
         return true;
     } catch (error) {
         const padding = Math.max(0, 10 - fileName.length);
-        console.error(`\x1b[31mAn error occurred: File '${fileName}' did not pass the checks:\x1b[0m${' '.repeat(padding)}`, error.message);
+        console.error(`\x1b[31mFile '${fileName}' did not pass the checks:\x1b[0m${' '.repeat(padding)}`, error.message);
         process.exitCode = 1;
         return false;
     }
